@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 960 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="miwei-architecture-title miwei-architecture-desc" id="miwei-architecture-root">
+        <title id="miwei-architecture-title">Mi味 Portfolio v1 系统架构</title>
+        <desc id="miwei-architecture-desc">SwiftUI 前端连接设备内的食物图片处理与模板拼贴模块；结构化记录与图片先保存在本机，再通过同步队列连接 Supabase 的账号服务、PostgreSQL 数据库和图片存储。</desc>
+        <defs>
+      <style>#miwei-architecture-root { color: #211818; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", sans-serif; }
+      #miwei-architecture-root .diagram-container { width: 100%; overflow-x: auto; }
+      #miwei-architecture-root .headline { fill: #211818; font: 600 20px -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", sans-serif; }
+      #miwei-architecture-root .zone-label { fill: #774d4d; font: 600 13px -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", sans-serif; letter-spacing: .04em; }
+      #miwei-architecture-root .tag { fill: #774d4d; font: 600 11px -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", sans-serif; }
+      #miwei-architecture-root .name { fill: #211818; font: 600 17px -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", sans-serif; }
+      #miwei-architecture-root .sub { fill: #774d4d; font: 400 12px -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", sans-serif; }
+      #miwei-architecture-root .diagram-container { overflow-x: visible; }</style>
+          <marker id="miwei-architecture-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#774d4d"/></marker>
+          <marker id="miwei-architecture-arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#774d4d"/></marker>
+        </defs>
+        <rect width="960" height="520" fill="#f8f7f2"/>
+        <text x="48" y="68" class="headline">记录先留在设备，再同步到云端</text>
+        <path d="M48 84 H912" fill="none" stroke="#d9caca" stroke-width="1"/>
+
+        <!-- Zones precede connectors and nodes. -->
+        <rect x="48" y="104" width="536" height="400" rx="8" fill="#f8f7f2" stroke="#d9caca" stroke-width="1"/>
+        <rect x="624" y="104" width="288" height="400" rx="8" fill="#f8f7f2" stroke="#d9caca" stroke-width="1"/>
+        <text x="68" y="128" class="zone-label">App 本机</text>
+        <text x="644" y="128" class="zone-label">托管后端 · Supabase</text>
+
+        <!-- The app saves locally first; remote links are separate. -->
+        <path d="M196 228 V268" fill="none" stroke="#774d4d" stroke-width="1.5" marker-end="url(#miwei-architecture-arrow)"/>
+        <path d="M196 352 V392" fill="none" stroke="#774d4d" stroke-width="1.5" marker-end="url(#miwei-architecture-arrow)"/>
+        <path d="M312 432 H352" fill="none" stroke="#774d4d" stroke-width="1.5" marker-end="url(#miwei-architecture-arrow)"/>
+        <path d="M312 184 H656" fill="none" stroke="#774d4d" stroke-width="1.5" marker-end="url(#miwei-architecture-arrow-link)"/>
+        <path d="M552 420 H592 Q600 420 600 412 V320 Q600 312 608 312 H656" fill="none" stroke="#774d4d" stroke-width="1.5" marker-end="url(#miwei-architecture-arrow-link)"/>
+        <path d="M552 448 H656" fill="none" stroke="#774d4d" stroke-width="1.5" marker-end="url(#miwei-architecture-arrow-link)"/>
+
+        <rect x="80" y="144" width="232" height="84" rx="8" fill="#fff8f8" stroke="#d9caca"/>
+        <text x="96" y="167" class="tag">前端 · SwiftUI</text>
+        <text x="96" y="193" class="name">记录与回看界面</text>
+        <text x="96" y="213" class="sub">拍摄 · 展柜 · 日志 · 编辑</text>
+
+        <rect x="80" y="268" width="232" height="84" rx="8" fill="#fff8f8" stroke="#d9caca"/>
+        <text x="96" y="291" class="tag">设备内处理</text>
+        <text x="96" y="317" class="name">裁切、餐盘与模板拼贴</text>
+        <text x="96" y="337" class="sub">真实照片在本机处理</text>
+
+        <rect x="80" y="392" width="232" height="84" rx="8" fill="#fff8f8" stroke="#d9caca"/>
+        <text x="96" y="415" class="tag">本地资料</text>
+        <text x="96" y="441" class="name">本地记录与图片</text>
+        <text x="96" y="461" class="sub">SwiftData · 设备内文件</text>
+
+        <rect x="352" y="392" width="200" height="84" rx="8" fill="#fff8f8" stroke="#d9caca"/>
+        <text x="368" y="415" class="tag">本地优先</text>
+        <text x="368" y="441" class="name">同步队列</text>
+        <text x="368" y="461" class="sub">联网同步 · 换机恢复</text>
+
+        <rect x="656" y="144" width="224" height="84" rx="8" fill="#fff8f8" stroke="#d9caca"/>
+        <text x="672" y="167" class="tag">身份与接口</text>
+        <text x="672" y="193" class="name">账号服务</text>
+        <text x="672" y="213" class="sub">Supabase Auth / RPC</text>
+
+        <rect x="656" y="268" width="224" height="84" rx="8" fill="#fff8f8" stroke="#d9caca"/>
+        <text x="672" y="291" class="tag">云端数据库</text>
+        <text x="672" y="317" class="name">菜品与品鉴记录</text>
+        <text x="672" y="337" class="sub">PostgreSQL</text>
+
+        <rect x="656" y="392" width="224" height="84" rx="8" fill="#fff8f8" stroke="#d9caca"/>
+        <text x="672" y="415" class="tag">云端图片存储</text>
+        <text x="672" y="441" class="name">原图与餐盘成品</text>
+        <text x="672" y="461" class="sub">Supabase Storage</text>
+
+      </svg>

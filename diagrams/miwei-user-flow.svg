@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 960 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="miwei-user-flow-title miwei-user-flow-desc" id="miwei-user-flow-root">
+        <title id="miwei-user-flow-title">从美食照片到个人食物档案</title>
+        <desc id="miwei-user-flow-desc">用户拍摄或选取美食照片，确认主体并建立个人食物档案；日期和用餐时段自动填写，菜名与菜品类型必填，口味偏好评分选填。同一份档案支持按菜品收藏管理、按日期回顾，以及今日或本周的自动拼贴和分享图片制作。</desc>
+        <defs>
+      <style>#miwei-user-flow-root { color: #211818; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", sans-serif; }
+      #miwei-user-flow-root .diagram-container { width: 100%; overflow-x: auto; }
+      #miwei-user-flow-root .name { fill: #211818; font: 600 17px -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", sans-serif; }
+      #miwei-user-flow-root .sub { fill: #774d4d; font: 400 13px -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", sans-serif; }
+      #miwei-user-flow-root .tiny { fill: #774d4d; font: 400 11px -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", sans-serif; }
+      #miwei-user-flow-root .eyelabel { fill: #774d4d; font: 600 12px -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", sans-serif; letter-spacing: .06em; }
+      #miwei-user-flow-root .diagram-container { overflow-x: visible; }</style>
+          <marker id="miwei-user-flow-arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#774d4d"/></marker>
+        </defs>
+        <rect width="960" height="600" fill="#f8f7f2"/>
+
+        <!-- Connectors are behind the nodes. -->
+        <path d="M224 174 H256" fill="none" stroke="#774d4d" stroke-width="1.5" marker-end="url(#miwei-user-flow-arrow)"/>
+        <path d="M456 174 H488" fill="none" stroke="#774d4d" stroke-width="1.5" marker-end="url(#miwei-user-flow-arrow)"/>
+        <path d="M700 256 V294" fill="none" stroke="#774d4d" stroke-width="1.5"/>
+        <path d="M180 294 H780" fill="none" stroke="#774d4d" stroke-width="1.5"/>
+        <path d="M180 294 V342" fill="none" stroke="#774d4d" stroke-width="1.5" marker-end="url(#miwei-user-flow-arrow)"/>
+        <path d="M480 294 V342" fill="none" stroke="#774d4d" stroke-width="1.5" marker-end="url(#miwei-user-flow-arrow)"/>
+        <path d="M780 294 V342" fill="none" stroke="#774d4d" stroke-width="1.5" marker-end="url(#miwei-user-flow-arrow)"/>
+        <path d="M780 442 V478" fill="none" stroke="#774d4d" stroke-width="1.5" marker-end="url(#miwei-user-flow-arrow)"/>
+
+        <text x="48" y="72" class="eyelabel">一次记录</text>
+        <path d="M48 82 H912" stroke="#d9caca" stroke-width="1"/>
+
+        <rect x="48" y="120" width="176" height="108" rx="8" fill="#fff8f8" stroke="#d9caca"/>
+        <text x="64" y="148" class="eyelabel">01 · 采集</text>
+        <text x="64" y="180" class="name">拍照或选图</text>
+
+        <rect x="256" y="120" width="200" height="108" rx="8" fill="#fff8f8" stroke="#d9caca"/>
+        <text x="272" y="148" class="eyelabel">02 · 餐盘化</text>
+        <text x="272" y="180" class="name">确认真实食物主体</text>
+        <text x="272" y="205" class="sub">选择餐盘，统一呈现</text>
+
+        <rect x="488" y="96" width="424" height="160" rx="8" fill="#fff8f8" stroke="#d9caca"/>
+        <text x="508" y="124" class="eyelabel">03 · 结构化记录</text>
+        <text x="508" y="153" class="name">把美食照片整理成个人食物档案</text>
+        <path d="M508 168 H892" stroke="#d9caca" stroke-width="1"/>
+        <text x="508" y="191" class="sub">自动填写</text>
+        <text x="584" y="191" class="sub">日期、用餐时段</text>
+        <text x="508" y="216" class="sub">必填</text>
+        <text x="584" y="216" class="sub">菜名、菜品类型</text>
+        <text x="508" y="241" class="sub">选填</text>
+        <text x="584" y="241" class="sub">口味偏好（评分）</text>
+
+        <text x="48" y="276" class="eyelabel">同一份食物档案，回应三种需求</text>
+
+        <rect x="60" y="342" width="240" height="100" rx="8" fill="#fff8f8" stroke="#d9caca"/>
+        <text x="80" y="370" class="eyelabel">收藏</text>
+        <text x="80" y="397" class="name">食物展柜</text>
+        <text x="80" y="422" class="sub">按菜品收藏，便于查找和管理</text>
+
+        <rect x="360" y="342" width="240" height="100" rx="8" fill="#fff8f8" stroke="#d9caca"/>
+        <text x="380" y="370" class="eyelabel">回看</text>
+        <text x="380" y="397" class="name">饮食日志</text>
+        <text x="380" y="422" class="sub">按日期回顾吃过的美食</text>
+
+        <rect x="660" y="342" width="240" height="100" rx="8" fill="#fff8f8" stroke="#d9caca"/>
+        <text x="680" y="370" class="eyelabel">分享准备</text>
+        <text x="680" y="397" class="name">今日／本周拼贴</text>
+        <text x="680" y="422" class="sub">按记录数量匹配模板并排版</text>
+
+        <rect x="660" y="478" width="240" height="72" rx="8" fill="#fff8f8" stroke="#d9caca"/>
+        <text x="680" y="505" class="name">进入编辑器</text>
+        <text x="680" y="529" class="sub">按需细化 · 保存分享图片</text>
+
+        <path d="M48 566 H912" stroke="#d9caca" stroke-width="1"/>
+        <text x="48" y="587" class="tiny">产品判断：轻量记录美食照片 → 形成可复用的个人食物档案 → 收藏管理、按日期回看、制作分享图片</text>
+      </svg>
