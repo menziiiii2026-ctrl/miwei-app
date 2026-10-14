@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Mi味</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>fonts/LongCang-Regular.ttf</string>
+		<string>fonts/MaShanZheng-Regular.ttf</string>
+		<string>fonts/CourierPrime-Regular.ttf</string>
+		<string>fonts/CourierPrime-Bold.ttf</string>
+		<string>fonts/Bungee-Regular.ttf</string>
+		<string>fonts/NanumPenScript-Regular.ttf</string>
+		<string>fonts/fusion-pixel-12px-proportional-zh_hans.ttf</string>
+		<string>fonts/ComingSoon-Regular.ttf</string>
+	</array>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.food-and-drink</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>MealPlateFoodProcessingAPIBaseURL</key>
+	<string></string>
+	<key>MealPlateCollageAIAPIBaseURL</key>
+	<string></string>
+	<key>SupabaseProjectURL</key>
+	<string>$(SUPABASE_PROJECT_URL)</string>
+	<key>SupabasePublishableKey</key>
+	<string>$(SUPABASE_PUBLISHABLE_KEY)</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>用于拍摄并记录你吃过的菜品。</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>用于确认是你本人，安全地重设 Mi味账号密码。</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>用于连接同一 Wi-Fi 下的 Mac，完成菜品识别、抠图与智能拼贴。</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>用于从相册选择需要记录的食物照片。</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>用于将你完成的美食拼贴保存到照片。</string>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>arm64</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+</dict>
+</plist>

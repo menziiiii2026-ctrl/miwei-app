@@ -1,0 +1,26 @@
+{
+  "template_id": "three-item-rect-stack-01",
+  "template_code": "3_模板1",
+  "text_layout_ref": "app-contract://template-text-layouts.v1#/templates/three-item-rect-stack-01",
+"text_layout_font_policy_ref": "app-contract://template-text-layouts.v1#/font_policy",
+  "food_item_count": 3,
+  "template_order_within_count": 1,
+  "canvas_ratio": "3:4",
+  "export": {"ratio": "3:4", "width_to_height": [3,4], "include": "working_canvas_only", "exclude": ["test_container", "outer_blank_space", "editor_guides"]},
+  "background": {"source": "background_library", "fit": "cover_3_to_4", "preferred_tones": ["warm_brown", "terracotta", "taupe"]},
+  "photo_window": {"shape": "rectangle", "ratio": "3:2", "subject_alignment": "center_center", "dish_diameter_rule": "equals_window_width", "clip_subject": true, "window_fill": "transparent", "corner_base": "none_transparent"},
+  "subjects": [
+    {"id":"subject_a", "anchor":[0.5,0.21], "window_width":0.52},
+    {"id":"subject_b", "anchor":[0.5,0.51], "window_width":0.52},
+    {"id":"subject_c", "anchor":[0.5,0.81], "window_width":0.52}
+  ],
+  "text": {"asset":"text-stickers/warm-food-copy-01.json", "slots":["top_left","middle_right","between_middle_bottom"]},
+  "composition_order": ["source_background","subject_a_clipped","subject_b_clipped","subject_c_clipped","text-stickers/warm-food-copy-01.json"],
+  "reference_canvas_px":[402,536],
+  "fixed_decoration_layers":{"coordinate_unit":"px","layers":[
+    {"id":"rect-stack-clip-a-01","type":"subject_clip_window","purpose":"transparent 3:2 crop window for subject A; no separate visual decoration","drawable":{"shape":"rectangle","fill":"transparent","clip":{"enabled":true,"crop":"dish_centered","corner_radius_px":0}},"frame_px":[97,42,208,126],"rotation_deg":0,"opacity":1,"z_index":1,"editable":true,"deletable":false,"color_binding":"none","fallback_color":"transparent","appearance":{"default_visible":true,"condition":"always"},"figma_node_id":"380:3148"},
+    {"id":"rect-stack-clip-b-01","type":"subject_clip_window","purpose":"transparent 3:2 crop window for subject B; no separate visual decoration","drawable":{"shape":"rectangle","fill":"transparent","clip":{"enabled":true,"crop":"dish_centered","corner_radius_px":0}},"frame_px":[97,205,208,126],"rotation_deg":0,"opacity":1,"z_index":2,"editable":true,"deletable":false,"color_binding":"none","fallback_color":"transparent","appearance":{"default_visible":true,"condition":"always"},"figma_node_id":"380:3149"},
+    {"id":"rect-stack-clip-c-01","type":"subject_clip_window","purpose":"transparent 3:2 crop window for subject C; no separate visual decoration","drawable":{"shape":"rectangle","fill":"transparent","clip":{"enabled":true,"crop":"dish_centered","corner_radius_px":0}},"frame_px":[97,368,208,126],"rotation_deg":0,"opacity":1,"z_index":3,"editable":true,"deletable":false,"color_binding":"none","fallback_color":"transparent","appearance":{"default_visible":true,"condition":"always"},"figma_node_id":"380:3150"}
+  ]},
+  "layer_stack":[{"id":"background","kind":"background","z_index":0},{"id":"rect-stack-clip-a-01","kind":"subject_clip_window","z_index":1},{"id":"rect-stack-clip-b-01","kind":"subject_clip_window","z_index":2},{"id":"rect-stack-clip-c-01","kind":"subject_clip_window","z_index":3},{"id":"text-top-01","kind":"text","z_index":4},{"id":"text-middle-01","kind":"text","z_index":5},{"id":"text-bottom-01","kind":"text","z_index":6}]
+}

@@ -1,0 +1,39 @@
+{
+  "version": "template-catalog.v1",
+  "canvas_contract": "canvas-scene.v1",
+  "text_layout_contract": "template-text-layouts.v1.json",
+  "template_compiler_rule": "Resolve each manifest text_layout_ref by stable template_id. Convert its reference_px geometry to normalized canvas-scene text layers; do not duplicate these coordinates in Swift or ask AI for coordinates.",
+  "asset_root": "../贴纸库",
+  "export_ratio": "3:4",
+  "templates": [
+    {"id":"today-frame-single-dish-01","code":"1_模板1","count":[1,1],"source":"today-frame/manifest.json","family":"today-frame","subject_mode":"whole","background_mode":"fixed-board","text_roles":["period-title","caption"],"asset_groups":["today-frame"]},
+    {"id":"dark-outline-center-single-dish-02","code":"1_模板2","count":[1,1],"source":"dark-outline-center/manifest.json","family":"dark-outline-center","subject_mode":"whole","background_mode":"library-dark","text_roles":["caption"],"asset_groups":["dark-outline-center"]},
+    {"id":"local-dark-mask-lower-subject-03","code":"1_模板3","count":[1,1],"source":"local-gray-board-lower-subject/manifest.json","family":"local-dark-mask","subject_mode":"whole","background_mode":"library-with-local-black-mask","text_roles":["caption"],"asset_groups":["local-gray-board-lower-subject"]},
+
+    {"id":"two-item-diary-collage-01","code":"2_模板1","count":[2,2],"source":"two-item-diary-collage/manifest.json","family":"diary-collage","subject_mode":"whole","background_mode":"library","text_roles":["record-copy","caption"],"asset_groups":["two-item-diary-collage"]},
+    {"id":"two-item-open-notebook-01","code":"2_模板2","count":[2,2],"source":"two-item-open-notebook/manifest.json","family":"open-notebook","subject_mode":"whole","background_mode":"library","text_roles":["record-copy","caption"],"asset_groups":["two-item-open-notebook"]},
+
+    {"id":"three-item-rect-stack-01","code":"3_模板1","count":[3,3],"source":"three-item-rect-stack/manifest.json","family":"rect-stack","subject_mode":"center-square-crop","background_mode":"library","text_roles":["dish-copy-a","dish-copy-b","dish-copy-c"],"asset_groups":["three-item-rect-stack"]},
+    {"id":"three-item-timestamp-stack-01","code":"3_模板2","count":[3,3],"source":"three-item-timestamp-stack/manifest.json","family":"timestamp-stack","subject_mode":"center-square-crop","background_mode":"library","text_roles":["time","caption"],"asset_groups":["three-item-timestamp-stack"]},
+    {"id":"three-item-mask-triangle-01","code":"3_模板3","count":[3,3],"source":"three-item-mask-triangle/manifest.json","family":"masked-triangle","subject_mode":"whole","background_mode":"library-with-local-black-mask","text_roles":["caption"],"asset_groups":["three-item-mask-triangle"]},
+
+    {"id":"four-item-s-curve-01","code":"4_模板1","count":[4,4],"source":"four-item-s-curve/manifest.json","family":"s-curve","subject_mode":"whole","background_mode":"library","text_roles":["headline"],"asset_groups":["four-item-s-curve"]},
+    {"id":"four-item-bracket-grid-01","code":"4_模板2","count":[4,4],"source":"four-item-bracket-grid/manifest.json","family":"bracket-grid","subject_mode":"center-middle-third","background_mode":"library","text_roles":["dish-name-a","dish-name-b","dish-name-c","dish-name-d"],"asset_groups":["four-item-bracket-grid"]},
+
+    {"id":"five-item-staggered-columns-01","code":"5_模板1","count":[5,5],"source":"five-item-staggered-columns/manifest.json","family":"staggered-columns","subject_mode":"whole","background_mode":"library","text_roles":["record-copy","caption"],"asset_groups":["five-item-staggered-columns"]},
+    {"id":"five-item-bracket-slices-01","code":"5_模板2","count":[5,5],"source":"five-item-bracket-slices/manifest.json","family":"bracket-slices","subject_mode":"center-middle-third","background_mode":"library","text_roles":["dish-name-a","dish-name-b","dish-name-c","dish-name-d","dish-name-e"],"asset_groups":["five-item-bracket-slices"]},
+
+    {"id":"six-item-polaroid-ring-01","code":"6_模板1","count":[6,6],"source":"six-item-polaroid-ring/manifest.json","family":"polaroid-ring","subject_mode":"whole","background_mode":"food-display-or-tableware","text_roles":[],"asset_groups":["six-item-polaroid-ring"]},
+    {"id":"six-item-growing-polaroid-trail-01","code":"6_模板2","count":[5,7],"source":"six-item-growing-polaroid-trail/manifest.json","family":"growing-polaroid-trail","subject_mode":"whole","background_mode":"specified-streetlight","text_roles":["season","date"],"asset_groups":["six-item-polaroid-ring","six-item-growing-polaroid-trail"]}
+  ],
+  "routing": {
+    "1":["1_模板1","1_模板2","1_模板3"],
+    "2":["2_模板1","2_模板2"],
+    "3":["3_模板1","3_模板2","3_模板3"],
+    "4":["4_模板1","4_模板2"],
+    "5":["5_模板1","5_模板2","6_模板2"],
+    "6":["6_模板1","6_模板2"],
+    "7":["6_模板2"],
+    "8+":{"status":"unsupported","action":"split-into-multiple-canvases-or-add-a-reviewed-template"}
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "template_id": "local-dark-mask-lower-subject-03",
+  "template_code": "1_模板3",
+  "text_layout_ref": "app-contract://template-text-layouts.v1#/templates/local-dark-mask-lower-subject-03",
+"text_layout_font_policy_ref": "app-contract://template-text-layouts.v1#/font_policy",
+  "food_item_count": 1,
+  "template_order_within_count": 3,
+  "canvas_ratio": "3:4",
+  "export": {
+    "ratio": "3:4",
+    "width_to_height": [3, 4],
+    "include": "working_canvas_only",
+    "exclude": ["test_container", "outer_blank_space", "editor_guides"]
+  },
+  "subject": {
+    "center": { "x": 0.50, "y": 0.67 },
+    "plate_only_width_to_canvas_width": 0.45,
+    "plate_only_width_range": [0.42, 0.48],
+    "multi_object_width_to_canvas_width": 0.72,
+    "multi_object_width_range": [0.68, 0.75]
+  },
+  "composition_order": [
+    "source_background",
+    "masks/local-dark-gray-mask-01.svg",
+    "effects/circular-outline-white-01.json",
+    "subject_cutout",
+    "illustration-stickers/wind-lines-white-01.svg",
+    "illustration-stickers/heart-outline-white-01.svg",
+    "text-stickers/bakery-serif-white-01.svg",
+    "text-stickers/foodie-mood-serif-white-01.svg"
+  ],
+  "assets": [
+    {
+      "id": "local-dark-gray-mask-01",
+      "type": "local-dark-mask",
+      "file": "masks/local-dark-gray-mask-01.svg",
+      "required": true
+    },
+    {
+      "id": "circular-outline-white-01",
+      "type": "code-effect",
+      "file": "effects/circular-outline-white-01.json",
+      "required": true
+    },
+    {
+      "id": "wind-lines-white-01",
+      "type": "illustration-sticker",
+      "taxonomy": ["line-doodle", "wind-motion"],
+      "file": "illustration-stickers/wind-lines-white-01.svg",
+      "required": true,
+      "repeat": 1
+    },
+    {
+      "id": "heart-outline-white-01",
+      "type": "illustration-sticker",
+      "taxonomy": ["symbol", "heart-outline"],
+      "file": "illustration-stickers/heart-outline-white-01.svg",
+      "required": false,
+      "repeat_range": [0, 1]
+    },
+    {
+      "id": "bakery-serif-white-01",
+      "type": "text-sticker",
+      "taxonomy": ["decorative-word", "serif"],
+      "file": "text-stickers/bakery-serif-white-01.svg",
+      "required": true
+    },
+    {
+      "id": "foodie-mood-serif-white-01",
+      "type": "text-sticker",
+      "taxonomy": ["decorative-phrase", "serif"],
+      "file": "text-stickers/foodie-mood-serif-white-01.svg",
+      "required": true
+    }
+  ],
+  "placement": {
+    "local_dark_mask": {
+      "horizontal_margin_each": 0.145,
+      "vertical_margin_each": 0.063,
+      "width": 0.71,
+      "height": 0.874,
+      "color": "#000000",
+      "opacity": 0.2,
+      "opacity_range": [0.15, 0.3],
+      "alignment_rule": "left_equals_right_and_top_equals_bottom"
+    },
+    "wind_lines_anchor": [0.38, 0.28],
+    "heart_anchor": [0.61, 0.43],
+    "bakery_anchor": [0.79, 0.53],
+    "bakery_rotation_degrees": 24,
+    "foodie_mood_anchor": [0.29, 0.77],
+    "foodie_mood_rotation_degrees": -33,
+    "working_canvas_ratio": "3:4",
+    "background_selection": "choose a color-compatible fixed background asset from the background library"
+  },
+  "reference_canvas_px":[402,874],
+  "fixed_decoration_layers":{"coordinate_unit":"px","layers":[
+    {"id":"local-black-mask-01","type":"mask","purpose":"centered dark translucent board","asset_ref":"masks/local-dark-gray-mask-01.svg","drawable":{"shape":"rectangle","fill":"#000000","clip":"none"},"frame_px":[58,34,286,468],"rotation_deg":0,"opacity":0.2,"z_index":1,"editable":true,"deletable":true,"color_binding":"none","fallback_color":"#000000","appearance":{"default_visible":true,"condition":"always"},"figma_node_id":"368:1945"},
+    {"id":"local-spaced-circle-outline-01","type":"outline","purpose":"spaced circular dish outline","asset_ref":"effects/circular-outline-white-01.json","drawable":{"shape":"ellipse","fill":"transparent","stroke":{"color":"#FFFDF5","width_px":5,"align":"center"}},"frame_px":[103,235,202,202],"rotation_deg":0,"opacity":1,"z_index":2,"editable":true,"deletable":true,"color_binding":"none","fallback_color":"#FFFDF5","appearance":{"default_visible":true,"condition":"always"},"figma_node_id":"369:1961"},
+    {"id":"local-heart-outline-01","type":"illustration_sticker","purpose":"heart accent","asset_ref":"illustration-stickers/heart-outline-white-01.svg","frame_px":[270,184,32,35],"rotation_deg":0,"opacity":1,"z_index":4,"editable":true,"deletable":true,"color_binding":"none","fallback_color":"#FFFFFF","appearance":{"default_visible":true,"condition":"always"},"figma_node_id":"368:1950"},
+    {"id":"local-wind-lines-01","type":"illustration_sticker","purpose":"wind-line accent","asset_ref":"illustration-stickers/wind-lines-white-01.svg","frame_px":[99,76,143,75],"rotation_deg":0,"opacity":1,"z_index":5,"editable":true,"deletable":true,"color_binding":"none","fallback_color":"#FFFFFF","appearance":{"default_visible":true,"condition":"always"},"figma_node_id":"368:1952"}
+  ]},
+  "layer_stack":[{"id":"background","kind":"background","z_index":0},{"id":"local-black-mask-01","kind":"fixed_decoration","z_index":1},{"id":"local-spaced-circle-outline-01","kind":"fixed_decoration","z_index":2},{"id":"subject_a","kind":"subject","z_index":3},{"id":"local-heart-outline-01","kind":"fixed_decoration","z_index":4},{"id":"local-wind-lines-01","kind":"fixed_decoration","z_index":5},{"id":"foodie-mood-01","kind":"text","z_index":6},{"id":"bakery-01","kind":"text","z_index":7}]
+}

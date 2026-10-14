@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "source": "Figma / 01. Components / Navigation Icons",
+  "icons": {
+    "nav.dishes.active": { "file": "nav-dishes-active.svg", "sourceSize": 24, "colorMode": "fixed" },
+    "nav.dishes.inactive": { "file": "nav-dishes-inactive.svg", "sourceSize": 24, "colorMode": "fixed" },
+    "nav.journal.active": { "file": "nav-journal-active.svg", "sourceSize": 24, "colorMode": "fixed" },
+    "nav.journal.inactive": { "file": "nav-journal-inactive.svg", "sourceSize": 24, "colorMode": "fixed" },
+    "action.add": { "file": "action-add.svg", "sourceSize": 24, "colorMode": "multiColor" },
+    "action.myPlates": { "file": "action-my-plates.svg", "sourceSize": 24, "colorMode": "multiColor" },
+    "action.series": { "file": "action-series.svg", "sourceSize": 24, "colorMode": "currentColor" },
+    "action.photoLibrary": {
+      "file": "action-photo-plus.svg",
+      "figmaNodeId": "274:8262",
+      "figmaName": "material-symbols-light:add-photo-alternate-outline-rounded",
+      "sourceSize": 24,
+      "colorMode": "currentColor"
+    },
+    "action.captureMore": {
+      "file": "action-camera-plus.svg",
+      "figmaNodeId": "274:8264",
+      "figmaName": "material-symbols-light:add-a-photo-outline-sharp",
+      "sourceSize": 24,
+      "colorMode": "currentColor"
+    },
+    "chevron.right": { "file": "chevron-right.svg", "sourceSize": 24, "colorMode": "fixed" },
+    "chevron.down": { "file": "chevron-down.svg", "sourceSize": 24, "colorMode": "fixed" },
+    "chevron.left": { "file": "chevron-left.svg", "sourceSize": 24, "colorMode": "currentColor" },
+    "camera.focus": { "file": "camera-focus.svg", "sourceSize": 24, "colorMode": "currentColor" },
+    "capture.check": { "file": "capture-check.svg", "sourceSize": 24, "colorMode": "currentColor" },
+    "candidate.remove": { "file": "candidate-remove.svg", "sourceSize": 24, "colorMode": "fixed" },
+    "candidate.resize": { "file": "candidate-resize.svg", "sourceSize": 24, "colorMode": "fixed" },
+    "status.error": { "file": "status-error.svg", "sourceSize": 24, "colorMode": "currentColor" },
+    "status.retry": { "file": "status-retry.svg", "sourceSize": 24, "colorMode": "currentColor" },
+    "editor.background": {
+      "file": "editor-background.svg",
+      "figmaNodeId": "377:2542",
+      "figmaName": "material-symbols-light:background-replace-outline-rounded",
+      "sourceSize": 24,
+      "colorMode": "currentColor"
+    },
+    "editor.split": {
+      "file": "editor-split.svg",
+      "figmaNodeId": "378:2574",
+      "figmaName": "codicon:split-vertical",
+      "sourceSize": 16,
+      "colorMode": "currentColor"
+    },
+    "editor.single": {
+      "file": "editor-single.svg",
+      "figmaNodeId": "378:2713",
+      "figmaName": "cil:image",
+      "sourceSize": 16,
+      "colorMode": "currentColor"
+    },
+    "editor.overlay": {
+      "file": "editor-overlay.svg",
+      "figmaNodeId": "378:2594",
+      "figmaName": "iconmind:mask-layer-outline-thin",
+      "sourceSize": 24,
+      "colorMode": "currentColor"
+    },
+    "editor.sticker": {
+      "file": "editor-sticker.svg",
+      "figmaNodeId": "378:2837",
+      "figmaName": "fluent:flash-20-regular",
+      "sourceSize": 30,
+      "colorMode": "currentColor"
+    },
+    "editor.opacity": {
+      "file": "editor-opacity.svg",
+      "figmaNodeId": "377:2571",
+      "figmaName": "streamline-plump:transparent",
+      "sourceSize": 24,
+      "colorMode": "currentColor"
+    },
+    "editor.text": {
+      "file": "editor-text.svg",
+      "figmaNodeId": "378:2820",
+      "figmaName": "carbon:text-creation",
+      "sourceSize": 27,
+      "colorMode": "currentColor"
+    },
+    "editor.trash": {
+      "file": "editor-trash.svg",
+      "figmaNodeId": "378:2803",
+      "figmaName": "quill:folder-trash",
+      "sourceSize": 30,
+      "colorMode": "currentColor"
+    },
+    "editor.resize": {
+      "file": "editor-resize.svg",
+      "figmaNodeId": "181:5374",
+      "figmaName": "icons8:resize-diagonal",
+      "sourceSize": 16,
+      "colorMode": "currentColor"
+    },
+    "editor.close": {
+      "file": "editor-close.svg",
+      "figmaNodeId": "181:5362",
+      "figmaName": "ep:circle-close",
+      "sourceSize": 16,
+      "colorMode": "currentColor"
+    },
+    "editor.alignLeft": {
+      "file": "editor-align-left.svg",
+      "figmaNodeId": "440:3592",
+      "figmaName": "fluent:text-align-left-20-regular",
+      "sourceSize": 20,
+      "colorMode": "currentColor"
+    },
+    "editor.alignCenter": {
+      "file": "editor-align-center.svg",
+      "figmaNodeId": "440:3598",
+      "figmaName": "fluent:text-align-center-20-regular",
+      "sourceSize": 20,
+      "colorMode": "currentColor"
+    },
+    "editor.alignRight": {
+      "file": "editor-align-right.svg",
+      "figmaNodeId": "440:3595",
+      "figmaName": "fluent:text-align-right-20-regular",
+      "sourceSize": 20,
+      "colorMode": "currentColor"
+    }
+  }
+}

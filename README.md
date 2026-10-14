@@ -8,9 +8,10 @@ Mi味是一款为喜欢记录美食、却不想花时间整理照片的人设计
 
 ## 项目概况
 
-- **项目方式：** 个人独立完成，从产品定义、交互与视觉设计，到开发、真机验收和 TestFlight 内测。
-- **当前阶段：** 内部 TestFlight 真机验收中。
-- **实现与源码：** [查看 Mi味 App 源码与技术结构](https://github.com/menziiiii2026-ctrl/miwei-app-source)。
+- **项目方式：** 个人独立完成，从产品定义、交互与视觉设计，到开发、真机验收和 TestFlight 测试。
+- **当前阶段：** TestFlight 真机测试中，核心流程仍在逐项验收。
+- **体验入口：** [加入 Mi味 TestFlight 测试](https://testflight.apple.com/join/ugS7ZFWX)。每个测试构建最长可用 90 天，过期后需更新构建。
+- **项目内容：** 本仓库同时收录产品案例、真实界面、系统架构与 App 源码。
 
 ## 为什么做
 
@@ -52,9 +53,18 @@ Mi味是一款为喜欢记录美食、却不想花时间整理照片的人设计
 
 记录和图片先保存在本机，再通过同步队列进入 Supabase，供账号恢复使用；今日／本周拼贴则在本机按预设模板生成。
 
+| 想了解 | 从这里看 |
+| --- | --- |
+| 界面与交互 | [SwiftUI 功能页面](iOS/MealPlate/MealPlate/Features/) |
+| 本地记录与图片处理 | [SwiftData 数据层](iOS/MealPlate/MealPlate/Data/)、[图片处理服务](iOS/MealPlate/MealPlate/Services/) |
+| 今日／本周拼贴 | [模板匹配与生成](iOS/MealPlate/MealPlate/Services/CollageGeneration/)、[拼贴编辑器](iOS/MealPlate/MealPlate/Features/Journal/CollageEditor/) |
+| 账号与云端同步 | [同步实现](iOS/MealPlate/MealPlate/Cloud/)、[数据库迁移](supabase/migrations/) |
+
+具体数据流、运行方式与实现边界见[技术实现说明](docs/technical-implementation.md)。当前的自动拼贴依靠本地规则与预设模板，不是已上线的 AI 功能。
+
 ## 当前进展与后续方向
 
-Mi味已进入内部 TestFlight 真机测试。目前确认原有菜品保留、新增菜品可立即出现在食物展柜；账号与图片恢复、编辑等流程仍在逐项回归。具体范围见[测试与学习](docs/testing-and-learning.md)。
+Mi味已进入 TestFlight 真机测试。目前确认原有菜品保留、新增菜品可立即出现在食物展柜；账号与图片恢复、编辑等流程仍在逐项回归。具体范围见[测试与学习](docs/testing-and-learning.md)。
 
 近期先完成核心流程的真机验收。此后希望沿两个方向继续发展：
 

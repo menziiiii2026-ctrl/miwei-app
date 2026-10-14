@@ -1,0 +1,87 @@
+{
+  "template_id": "today-frame-single-dish-01",
+  "template_code": "1_模板1",
+  "text_layout_ref": "app-contract://template-text-layouts.v1#/templates/today-frame-single-dish-01",
+"text_layout_font_policy_ref": "app-contract://template-text-layouts.v1#/font_policy",
+  "food_item_count": 1,
+  "template_order_within_count": 1,
+  "canvas_ratio": "3:4",
+  "export": {
+    "ratio": "3:4",
+    "width_to_height": [3, 4],
+    "include": "working_canvas_only",
+    "exclude": ["test_container", "outer_blank_space", "editor_guides"]
+  },
+  "composition_order": [
+    "boards/today-frame-neutral-01.svg",
+    "text-components/period-title-top-center-01.json",
+    "subject_cutout",
+    "illustration-stickers/arrow-group-white-01.svg",
+    "text-stickers/glyph-capsule-gray-01.svg",
+    "text-stickers/kaomoji-card-gray-01.svg",
+    "text-components/caption-right-bottom-01.json"
+  ],
+  "assets": [
+    {
+      "id": "today-frame-neutral-01",
+      "type": "board",
+      "file": "boards/today-frame-neutral-01.svg",
+      "required": true,
+      "description": "3:4 灰白画框，含上下框边；顶部周期标题为独立文本层"
+    },
+    {
+      "id": "period-title-top-center-01",
+      "type": "text-component",
+      "file": "text-components/period-title-top-center-01.json",
+      "required": true,
+      "description": "App 根据入口确定：今日为 Today，本周为 This Week，不由 AI 猜测"
+    },
+    {
+      "id": "arrow-group-white-01",
+      "type": "illustration-sticker",
+      "file": "illustration-stickers/arrow-group-white-01.svg",
+      "required": true,
+      "description": "三枚粗笔、手绘感、指向主体的白色箭头"
+    },
+    {
+      "id": "glyph-capsule-gray-01",
+      "type": "text-sticker",
+      "file": "text-stickers/glyph-capsule-gray-01.svg",
+      "required": false,
+      "description": "右上灰色半透明装饰字符胶囊，文字固定为氛围用途"
+    },
+    {
+      "id": "kaomoji-card-gray-01",
+      "type": "text-sticker",
+      "file": "text-stickers/kaomoji-card-gray-01.svg",
+      "required": false,
+      "description": "左下浅灰颜文字小卡片，文字固定为氛围用途"
+    },
+    {
+      "id": "caption-right-bottom-01",
+      "type": "text-component",
+      "file": "text-components/caption-right-bottom-01.json",
+      "required": true,
+      "description": "用户自定义中文短句的字体、色彩、锚点与避让规则"
+    }
+  ],
+  "selection_policy": {
+    "illustration_stickers": "always include arrow-group-white-01",
+    "text_stickers": "select 0 to 2 without repeating an asset",
+    "text_components": "always render period-title-top-center-01 from app period and caption-right-bottom-01 with user copy"
+  },
+  "reference_canvas_px": [402, 713],
+  "fixed_decoration_layers": {
+    "coordinate_unit": "px",
+    "layers": [
+      {"id":"today-top-board-01","type":"board","purpose":"upper white frame band","drawable":{"shape":"rectangle","fill":"#F2F2F0","corner_radius_px":0},"frame_px":[0,0,402,94],"rotation_deg":0,"opacity":1,"z_index":1,"editable":false,"deletable":false,"color_binding":"none","fallback_color":"#F2F2F0","appearance":{"default_visible":true,"condition":"always"},"figma_node_id":"366:1822"},
+      {"id":"today-bottom-board-01","type":"board","purpose":"lower white frame band","drawable":{"shape":"rectangle","fill":"#F2F2F0","corner_radius_px":0},"frame_px":[0,666,402,47],"rotation_deg":0,"opacity":1,"z_index":2,"editable":false,"deletable":false,"color_binding":"none","fallback_color":"#F2F2F0","appearance":{"default_visible":true,"condition":"always"},"figma_node_id":"366:1821"},
+      {"id":"today-arrow-group-01","type":"illustration_sticker","purpose":"hand-drawn arrows pointing at dish","asset_ref":"illustration-stickers/arrow-group-white-01.svg","frame_px":[23,121,115,96],"rotation_deg":0,"opacity":1,"z_index":6,"editable":true,"deletable":true,"color_binding":"none","fallback_color":"#FFFFFF","appearance":{"default_visible":true,"condition":"always"},"figma_node_id":"367:1830"},
+      {"id":"today-glyph-capsule-base-01","type":"text_sticker_backer","purpose":"right-upper translucent capsule behind text-sticker content","drawable":{"shape":"rounded_rectangle","fill":"#858785","corner_radius_px":13},"frame_px":[214,113,154,26],"rotation_deg":0,"opacity":0.76,"z_index":7,"editable":true,"deletable":true,"color_binding":"none","fallback_color":"#858785","appearance":{"default_visible":true,"condition":"always"},"figma_node_id":"367:1932"},
+      {"id":"today-kaomoji-card-base-01","type":"text_sticker_backer","purpose":"left-lower rounded card behind text-sticker content","drawable":{"shape":"rounded_rectangle","fill":"#F7F7F5","corner_radius_px":3,"stroke":{"color":"#D6D9D6","width_px":1,"align":"inside"}},"frame_px":[28,614,110,46],"rotation_deg":0,"opacity":1,"z_index":9,"editable":true,"deletable":true,"color_binding":"none","fallback_color":"#F7F7F5","appearance":{"default_visible":true,"condition":"always"},"figma_node_id":"367:1931"}
+    ]
+  },
+  "layer_stack": [
+    {"id":"background","kind":"background","z_index":0},{"id":"today-top-board-01","kind":"fixed_decoration","z_index":1},{"id":"today-bottom-board-01","kind":"fixed_decoration","z_index":2},{"id":"subject_a","kind":"subject","z_index":3},{"id":"period-title-top-center-01","kind":"text","z_index":4},{"id":"caption-right-bottom-01","kind":"text","z_index":5},{"id":"today-arrow-group-01","kind":"fixed_decoration","z_index":6},{"id":"today-glyph-capsule-base-01","kind":"fixed_decoration","z_index":7},{"id":"glyph-capsule-gray-01","kind":"text","z_index":8},{"id":"today-kaomoji-card-base-01","kind":"fixed_decoration","z_index":9},{"id":"kaomoji-card-gray-01","kind":"text","z_index":10}
+  ]
+}

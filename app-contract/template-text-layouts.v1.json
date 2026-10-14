@@ -1,0 +1,128 @@
+{
+  "version": "template-text-layouts.v1",
+  "purpose": "Canonical text geometry extracted from the verified Figma template frames. The Template Compiler, not Swift UI code and not an AI model, converts reference_px into normalized canvas-scene text layers.",
+  "font_policy": {"allowed_families":["黑体-简","American Typewriter","BM Yeonsung","Georgia","Coming Soon"],"style_rule":"Use native Bold when present. When a layer has font.is_bold true, synthesize bold from its specified family and Regular style. Do not synthesize Medium."},
+  "coordinate_system": {
+    "origin": "top_left",
+    "unit": "px",
+    "reference_rule": "x, y, width and height are exact Figma validation-frame measurements. Scale both axes from reference_canvas_px to the 3:4 export canvas; preserve text rotation and alignment.",
+    "text_defaults": {"editable": true, "line_height": "AUTO", "rotation_deg": 0}
+  },
+  "templates": {
+    "today-frame-single-dish-01": {
+      "reference_canvas_px": [402, 713],
+      "figma_container_px": [402, 874],
+      "note": "The Figma validation container has unused space below the 713px working composition. Coordinates use the visible working composition, not the outer test container.",
+      "layers": [
+        {"id":"period-title-top-center-01","binding":"period","values":{"today":"Today","week":"This Week"},"frame":[159,27,90,36],"font":{"family":"黑体-简","style":"Regular","size_px":30,"is_bold":true},"align":"LEFT","color":"#303030","z_index":5,"max_lines":1,"overflow":"scale_down"},
+        {"id":"caption-right-bottom-01","binding":"user_caption","frame":[228,587,136,21],"font":{"family":"黑体-简","style":"Regular","size_px":17},"align":"LEFT","color":"#1F2E38","z_index":7,"max_lines":1,"overflow":"scale_down"}
+      ]
+    },
+    "dark-outline-center-single-dish-02": {
+      "reference_canvas_px": [402, 713],
+      "figma_container_px": [402, 874],
+      "note": "Coordinates use the visible 713px working composition inside the taller Figma validation container.",
+      "layers": [
+        {"id":"account-line-01","binding":"account_or_fixed_copy","default_text":"taptimes18","frame":[148,573,99,22],"font":{"family":"BM Yeonsung","style":"Regular","size_px":16},"align":"LEFT","color":"#FAF5E3","z_index":11,"max_lines":1,"overflow":"scale_down"},
+        {"id":"caption-two-line-bottom-center-01","binding":"caption","default_text":"A designer’s table diary.","frame":[91,595,215,19],"font":{"family":"BM Yeonsung","style":"Regular","size_px":14},"align":"LEFT","color":"#FAF5E3","z_index":12,"max_lines":2,"overflow":"wrap"}
+      ]
+    },
+    "local-dark-mask-lower-subject-03": {
+      "reference_canvas_px": [402, 536],
+      "layers": [
+        {"id":"bakery-serif-white-01","binding":"decorative_copy","default_text":"bakery","frame":[281.3613,267,57,20],"font":{"family":"Georgia","style":"Italic","size_px":18},"align":"LEFT","rotation_deg":-1.0332,"color":"#FFFCF5","z_index":8,"max_lines":1,"overflow":"clip"},
+        {"id":"foodie-mood-serif-white-01","binding":"decorative_copy","default_text":"foodie mood","frame":[88.4524,419,100,20],"font":{"family":"Georgia","style":"Regular","size_px":18},"align":"LEFT","rotation_deg":-25,"color":"#FFFCF5","z_index":7,"max_lines":1,"overflow":"clip"}
+      ]
+    },
+    "two-item-diary-collage-01": {
+      "reference_canvas_px": [402, 536],
+      "layers": [
+        {"id":"diary-copy-top-left-01","binding":"record_copy","default_text":"记录今日美味 · ♪","frame":[87,133,92,16],"font":{"family":"黑体-简","style":"Regular","size_px":12},"align":"LEFT","line_height_percent":135,"color":"#FFFDED","z_index":14,"max_lines":1,"overflow":"scale_down"},
+        {"id":"diary-copy-upper-right-01","binding":"dish_name_or_record_copy","default_text":"震撼美味！","frame":[245,182,73,19],"font":{"family":"黑体-简","style":"Regular","size_px":14},"align":"LEFT","line_height_percent":135,"color":"#FFFDED","z_index":15,"max_lines":1,"overflow":"scale_down"},
+        {"id":"diary-copy-lower-left-01","binding":"record_copy","default_text":"好吃好吃好吃\n今日份惊喜\n认真记录中\n美味 · 美味","frame":[83,316,62,56],"font":{"family":"黑体-简","style":"Regular","size_px":10},"align":"LEFT","line_height_percent":135,"color":"#FFFDED","z_index":16,"max_lines":4,"overflow":"wrap"}
+      ]
+    },
+    "two-item-open-notebook-01": {
+      "reference_canvas_px": [402, 536],
+      "layers": [
+        {"id":"delicious-repeater-01","binding":"fixed_repeat_copy","default_text":"delicious","repeat":{"lines":20,"separator":"newline"},"frame":[8,309,29,140],"font":{"family":"黑体-简","style":"Regular","size_px":6.5},"align":"LEFT","line_height_percent":112,"color":"#F7F0DB","z_index":9,"max_lines":20,"overflow":"wrap"},
+        {"id":"editorial-title-01","binding":"editorial_title","default_text":"TASTY","frame":[234,350,65,26],"font":{"family":"American Typewriter","style":"Regular","size_px":22},"align":"LEFT","color":"#F7F0DB","z_index":10,"max_lines":1,"overflow":"scale_down"},
+        {"id":"editorial-subtitle-01","binding":"fixed_copy","default_text":"FOOD DIARY","frame":[237,378,68,12],"font":{"family":"黑体-简","style":"Regular","size_px":10},"align":"LEFT","color":"#F7F0DB","z_index":11,"max_lines":1,"overflow":"scale_down"},
+        {"id":"food-word-01","binding":"food_word","default_text":"fresh","frame":[291,430,24,11],"font":{"family":"黑体-简","style":"Regular","size_px":9},"align":"LEFT","color":"#F7F0DB","z_index":12,"max_lines":1,"overflow":"clip"},
+        {"id":"food-word-02","binding":"food_word","default_text":"yum","frame":[300,456,19,11],"font":{"family":"黑体-简","style":"Regular","size_px":9},"align":"LEFT","color":"#F7F0DB","z_index":13,"max_lines":1,"overflow":"clip"}
+      ]
+    },
+    "three-item-rect-stack-01": {
+      "reference_canvas_px": [402, 536],
+      "layers": [
+        {"id":"dish-copy-a-01","binding":"dish_name_or_mood_copy","default_text":"DELICIOUS\nTASTY MOMENT","frame":[42,148,98,26],"font":{"family":"American Typewriter","style":"Bold","size_px":13},"align":"LEFT","line_height_percent":100,"color":"#F5DB6B","z_index":4,"max_lines":2,"overflow":"wrap"},
+        {"id":"dish-copy-b-01","binding":"dish_name_or_mood_copy","default_text":"YUMMY","frame":[297,254,49,13],"font":{"family":"American Typewriter","style":"Bold","size_px":13},"align":"LEFT","line_height_percent":100,"color":"#F5DB6B","z_index":5,"max_lines":1,"overflow":"clip"},
+        {"id":"dish-copy-c-01","binding":"dish_name_or_mood_copy","default_text":"GOOD\nMOOD","frame":[166,337,38,26],"font":{"family":"American Typewriter","style":"Bold","size_px":13},"align":"LEFT","line_height_percent":100,"color":"#F5DB6B","z_index":6,"max_lines":2,"overflow":"wrap"}
+      ]
+    },
+    "three-item-timestamp-stack-01": {
+      "reference_canvas_px": [402, 536],
+      "layers": [
+        {"id":"timestamp-01","binding":"time","default_text":"14:30 pm","frame":[169,53,46,13],"font":{"family":"American Typewriter","style":"Regular","size_px":11},"align":"LEFT","color":"#F7F5DE","z_index":4,"max_lines":1,"overflow":"clip"},
+        {"id":"footer-caption-01","binding":"caption","default_text":"# tasty afternoon on #","frame":[124,500,118,13],"font":{"family":"American Typewriter","style":"Regular","size_px":11},"align":"LEFT","color":"#F7F5DE","z_index":5,"max_lines":1,"overflow":"scale_down"}
+      ]
+    },
+    "three-item-mask-triangle-01": {
+      "reference_canvas_px": [402, 536],
+      "layers": [
+        {"id":"micro-copy-01","binding":"mood_copy","default_text":"TASTY DAY\nDELICIOUS\nGOOD MOOD","frame":[260,257,56,39],"font":{"family":"Coming Soon","style":"Regular","size_px":9},"align":"LEFT","line_height_percent":145,"color":"#FFFDED","z_index":10,"max_lines":3,"overflow":"wrap"}
+      ]
+    },
+    "four-item-s-curve-01": {
+      "reference_canvas_px": [402, 536],
+      "layers": [
+        {"id":"headline-01","binding":"headline","default_text":"TASTY","frame":[265,72,77,29],"font":{"family":"黑体-简","style":"Regular","size_px":24},"align":"LEFT","color":"#FFFFFF","z_index":10,"max_lines":1,"overflow":"scale_down"}
+      ]
+    },
+    "four-item-bracket-grid-01": {
+      "reference_canvas_px": [402, 536],
+      "layers": [
+        {"id":"number-label-a-01","binding":"fixed_index","default_text":"(01)","frame":[92,207,26,17],"font":{"family":"黑体-简","style":"Regular","size_px":14},"align":"LEFT","color":"#FFFFFF","z_index":12,"max_lines":1,"overflow":"clip"},
+        {"id":"number-label-b-01","binding":"fixed_index","default_text":"(02)","frame":[276,207,28,17],"font":{"family":"黑体-简","style":"Regular","size_px":14},"align":"LEFT","color":"#FFFFFF","z_index":14,"max_lines":1,"overflow":"clip"},
+        {"id":"number-label-c-01","binding":"fixed_index","default_text":"(03)","frame":[92,307,28,17],"font":{"family":"黑体-简","style":"Regular","size_px":14},"align":"LEFT","color":"#FFFFFF","z_index":13,"max_lines":1,"overflow":"clip"},
+        {"id":"number-label-d-01","binding":"fixed_index","default_text":"(04)","frame":[276,307,28,17],"font":{"family":"黑体-简","style":"Regular","size_px":14},"align":"LEFT","color":"#FFFFFF","z_index":15,"max_lines":1,"overflow":"clip"},
+        {"id":"bottom-copy-line-01","binding":"mood_copy","default_text":"delicious delicious delicious","frame":[105,431,105,10],"font":{"family":"黑体-简","style":"Regular","size_px":8},"align":"LEFT","color":"#FFFFFF","z_index":17,"max_lines":1,"overflow":"scale_down"},
+        {"id":"bottom-copy-line-02","binding":"mood_copy","default_text":"delicious delicious delicious","frame":[105,446,105,10],"font":{"family":"黑体-简","style":"Regular","size_px":8},"align":"LEFT","color":"#FFFFFF","z_index":18,"max_lines":1,"overflow":"scale_down"},
+        {"id":"bottom-copy-line-03","binding":"mood_copy","default_text":"delicious delicious delicious","frame":[105,461,105,10],"font":{"family":"黑体-简","style":"Regular","size_px":8},"align":"LEFT","color":"#FFFFFF","z_index":16,"max_lines":1,"overflow":"scale_down"}
+      ]
+    },
+    "five-item-staggered-columns-01": {
+      "reference_canvas_px": [402, 536],
+      "layers": [
+        {"id":"step-copy-01","binding":"fixed_word","default_text":"one","frame":[160,93,32,22],"font":{"family":"黑体-简","style":"Regular","size_px":18},"align":"LEFT","color":"#FFFFFF","z_index":7,"max_lines":1,"overflow":"clip"},
+        {"id":"step-copy-02","binding":"fixed_word","default_text":"step","frame":[218,175,38,22],"font":{"family":"黑体-简","style":"Regular","size_px":18},"align":"LEFT","color":"#FFFFFF","z_index":8,"max_lines":1,"overflow":"clip"},
+        {"id":"step-copy-03","binding":"fixed_word","default_text":"at","frame":[160,260,17,22],"font":{"family":"黑体-简","style":"Regular","size_px":18},"align":"LEFT","color":"#FFFFFF","z_index":6,"max_lines":1,"overflow":"clip"},
+        {"id":"step-copy-04","binding":"fixed_word","default_text":"a","frame":[218,342,11,22],"font":{"family":"黑体-简","style":"Regular","size_px":18},"align":"LEFT","color":"#FFFFFF","z_index":9,"max_lines":1,"overflow":"clip"},
+        {"id":"step-copy-05","binding":"fixed_word","default_text":"time","frame":[160,423,37,22],"font":{"family":"黑体-简","style":"Regular","size_px":18},"align":"LEFT","color":"#FFFFFF","z_index":11,"max_lines":1,"overflow":"clip"},
+        {"id":"footer-copy-01","binding":"caption","default_text":"今天又乱七八糟吃了些什么","frame":[100,497,180,18],"font":{"family":"黑体-简","style":"Regular","size_px":15},"align":"LEFT","color":"#FFFFFF","z_index":10,"max_lines":1,"overflow":"scale_down"}
+      ]
+    },
+    "five-item-bracket-slices-01": {
+      "reference_canvas_px": [402, 536],
+      "layers": [
+        {"id":"dish-name-a-01","binding":"dish_name_a","frame":[225,87,54,22],"font":{"family":"黑体-简","style":"Regular","size_px":18,"is_bold":true},"align":"LEFT","color":"#FFFFFF","z_index":10,"max_lines":1,"overflow":"scale_down"},
+        {"id":"dish-name-b-01","binding":"dish_name_b","frame":[30,173,54,22],"font":{"family":"黑体-简","style":"Regular","size_px":18,"is_bold":true},"align":"LEFT","color":"#FFFFFF","z_index":7,"max_lines":1,"overflow":"scale_down"},
+        {"id":"dish-name-c-01","binding":"dish_name_c","frame":[225,259,54,22],"font":{"family":"黑体-简","style":"Regular","size_px":18,"is_bold":true},"align":"LEFT","color":"#FFFFFF","z_index":9,"max_lines":1,"overflow":"scale_down"},
+        {"id":"dish-name-d-01","binding":"dish_name_d","frame":[30,345,54,22],"font":{"family":"黑体-简","style":"Regular","size_px":18,"is_bold":true},"align":"LEFT","color":"#FFFFFF","z_index":8,"max_lines":1,"overflow":"scale_down"},
+        {"id":"dish-name-e-01","binding":"dish_name_e","frame":[225,431,54,22],"font":{"family":"黑体-简","style":"Regular","size_px":18,"is_bold":true},"align":"LEFT","color":"#FFFFFF","z_index":6,"max_lines":1,"overflow":"scale_down"}
+      ]
+    },
+    "six-item-polaroid-ring-01": {
+      "reference_canvas_px": [402, 536],
+      "layers": [],
+      "note": "No semantic text layer in the verified template. Do not synthesize a title or caption."
+    },
+    "six-item-growing-polaroid-trail-01": {
+      "reference_canvas_px": [402, 536],
+      "layers": [
+        {"id":"season-label-01","binding":"season","default_text":"The\nSummer","frame":[26,24,46,28],"font":{"family":"Georgia","style":"Regular","size_px":12},"align":"LEFT","line_height_percent":115,"color":"#FFFCF2","z_index":1,"max_lines":2,"overflow":"wrap"},
+        {"id":"date-label-01","binding":"date_label","default_text":"2026\nSeptember","frame":[307,24,58,28],"font":{"family":"Georgia","style":"Regular","size_px":12},"align":"LEFT","line_height_percent":115,"color":"#FFFCF2","z_index":2,"max_lines":2,"overflow":"wrap"}
+      ]
+    }
+  }
+}

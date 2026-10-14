@@ -1,0 +1,10 @@
+{
+  "id": "background-dim-01",
+  "type": "full-background-dark-mask",
+  "target": "background_only",
+  "color": "#212126",
+  "opacity": 0.4,
+  "opacity_range": [0.35, 0.5],
+  "preserve_subject_luminance": true,
+  "minimum_subject_background_luminance_ratio": 1.8
+}

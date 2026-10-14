@@ -1,0 +1,5 @@
+// Copy this file to Supabase.local.xcconfig. It is intentionally gitignored.
+// The Publishable Key is safe for an iOS client only because Supabase RLS is enabled.
+// Keep $() between the slashes. A literal // starts a comment in xcconfig.
+SUPABASE_PROJECT_URL = https:/$()/your-project.supabase.co
+SUPABASE_PUBLISHABLE_KEY = sb_publishable_replace_me

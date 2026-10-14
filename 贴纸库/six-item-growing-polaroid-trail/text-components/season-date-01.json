@@ -1,0 +1,9 @@
+{
+  "id":"season-date-01",
+  "type":"text-component",
+  "roles":[
+    {"name":"season_label","content":"The\\nSummer","anchor":[0.08,0.06],"alignment":"left","editable":false,"font_size_ratio":0.026},
+    {"name":"date_label","content_from":"date.year_and_month","format":"YYYY\\nMonth","anchor":[0.92,0.06],"alignment":"right","editable":true,"font_size_ratio":0.026}
+  ],
+  "style":{"color":"#FFFDF7","font_family_fallback":["Georgia","serif"],"line_height_ratio":1.15}
+}

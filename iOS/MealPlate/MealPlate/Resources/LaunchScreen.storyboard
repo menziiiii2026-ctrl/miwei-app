@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LaunchViewController">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="LaunchScene">
+            <objects>
+                <viewController id="LaunchViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LaunchView">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="BrandLaunchBackground" translatesAutoresizingMaskIntoConstraints="NO" id="LaunchBackgroundImage">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="BrandLogo" translatesAutoresizingMaskIntoConstraints="NO" id="LaunchLogoImage">
+                                <rect key="frame" x="76.5" y="306" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="LaunchLogoWidth"/>
+                                    <constraint firstAttribute="height" constant="240" id="LaunchLogoHeight"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LaunchSafeArea"/>
+                        <color key="backgroundColor" red="0.972223" green="0.958637" blue="0.927669" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LaunchBackgroundImage" firstAttribute="leading" secondItem="LaunchView" secondAttribute="leading" id="BackgroundLeading"/>
+                            <constraint firstItem="LaunchBackgroundImage" firstAttribute="trailing" secondItem="LaunchView" secondAttribute="trailing" id="BackgroundTrailing"/>
+                            <constraint firstItem="LaunchBackgroundImage" firstAttribute="top" secondItem="LaunchView" secondAttribute="top" id="BackgroundTop"/>
+                            <constraint firstItem="LaunchBackgroundImage" firstAttribute="bottom" secondItem="LaunchView" secondAttribute="bottom" id="BackgroundBottom"/>
+                            <constraint firstItem="LaunchLogoImage" firstAttribute="centerX" secondItem="LaunchView" secondAttribute="centerX" id="LogoCenterX"/>
+                            <constraint firstItem="LaunchLogoImage" firstAttribute="centerY" secondItem="LaunchView" secondAttribute="centerY" id="LogoCenterY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LaunchFirstResponder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50" y="300"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BrandLaunchBackground" width="1" height="1"/>
+        <image name="BrandLogo" width="1024" height="1024"/>
+    </resources>
+</document>

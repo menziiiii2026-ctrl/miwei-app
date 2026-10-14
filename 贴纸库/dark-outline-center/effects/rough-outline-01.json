@@ -1,0 +1,12 @@
+{
+  "id": "rough-outline-01",
+  "type": "mask-derived-outer-stroke",
+  "default_color": "#F6BD21",
+  "editable": ["color", "width", "roughness"],
+  "width_to_canvas_width": 0.0055,
+  "width_range": [0.0035, 0.009],
+  "placement": "outside",
+  "roughness_to_stroke_width": 0.12,
+  "join": "round",
+  "cap": "round"
+}

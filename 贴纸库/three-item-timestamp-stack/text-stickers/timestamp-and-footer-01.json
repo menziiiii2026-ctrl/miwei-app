@@ -1,0 +1,9 @@
+{
+  "id": "timestamp-and-footer-01",
+  "type": "text-sticker-family",
+  "editable": false,
+  "timestamp": {"default": "14:30 pm", "anchor": "top_center", "font_size_ratio": [0.025, 0.034], "align": "center"},
+  "footer": {"default": "# tasty afternoon on #", "anchor": "bottom_center", "font_size_ratio": [0.028, 0.04], "align": "center"},
+  "color": "#F7F4DF",
+  "font_role": "soft-typewriter"
+}

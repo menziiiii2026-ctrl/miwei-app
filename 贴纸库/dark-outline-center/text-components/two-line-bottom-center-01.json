@@ -1,0 +1,20 @@
+{
+  "id": "two-line-bottom-center-01",
+  "type": "text-component",
+  "copy_source": "user",
+  "lines": 2,
+  "anchor": { "x": 0.5, "y": 0.805 },
+  "alignment": "center",
+  "maximum_width_to_canvas_width": 0.48,
+  "font": {
+    "family_role": "rough-typewriter-monospace",
+    "size_to_canvas_height": 0.022,
+    "size_range": [0.020, 0.023],
+    "line_height": 1.16,
+    "color": "#F5F3EA"
+  },
+  "background": "none",
+  "stroke": "none",
+  "shadow": "none",
+  "minimum_gap_from_subject_to_canvas_height": 0.05
+}

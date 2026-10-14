@@ -1,0 +1,61 @@
+{
+  "template_id": "four-item-s-curve-01",
+  "template_code": "4_模板1",
+  "text_layout_ref": "app-contract://template-text-layouts.v1#/templates/four-item-s-curve-01",
+  "text_layout_font_policy_ref": "app-contract://template-text-layouts.v1#/font_policy",
+  "food_item_count": 4,
+  "template_order_within_count": 1,
+  "canvas_ratio": "3:4",
+  "export": {"ratio":"3:4","width_to_height":[3,4],"include":"working_canvas_only","exclude":["test_container","outer_blank_space","editor_guides"]},
+  "background": {"source":"background_library","fit":"cover_3_to_4","selection":"harmonize_with_food_and_accent"},
+  "reference_canvas_px": [402, 536],
+  "subjects": [
+    {"id":"subject_a","anchor":[0.25,0.14],"diameter_ratio":0.27,"role":"s_start"},
+    {"id":"subject_b","anchor":[0.47,0.35],"diameter_ratio":0.28,"role":"s_turn_right"},
+    {"id":"subject_c","anchor":[0.24,0.58],"diameter_ratio":0.29,"role":"s_turn_left"},
+    {"id":"subject_d","anchor":[0.49,0.84],"diameter_ratio":0.29,"role":"s_end"}
+  ],
+  "fixed_decoration_layers": {
+    "coordinate_unit": "px",
+    "reference_canvas_px": [402, 536],
+    "color_binding_rule": "Resolve intent.mood.accent_color when valid; otherwise use each layer fallback_color. For multi-color assets, binding replaces only the primary accent unless color_binding_scope specifies otherwise.",
+    "layers": [
+      {"id":"s-curve-outline-subject-a-01","kind":"outline","type":"outline","purpose":"accent spaced circle for subject A","shape":"spaced_circle","subject_id":"subject_a","drawable":{"shape":"ellipse","fill":"transparent","stroke":{"width_px":4,"align":"center"}},"frame_px":[40,15,121,121],"stroke_width_px":4,"rotation_deg":0,"opacity":1,"z_index":1,"color_binding":"intent.mood.accent_color","fallback_color":"#FFD326","editable":true,"deletable":true,"appearance":{"default_visible":true,"condition":"always"},"figma_node_id":"400:3427"},
+      {"id":"s-curve-outline-subject-b-01","kind":"outline","type":"outline","purpose":"accent spaced circle for subject B","shape":"spaced_circle","subject_id":"subject_b","drawable":{"shape":"ellipse","fill":"transparent","stroke":{"width_px":4,"align":"center"}},"frame_px":[126,125,125,125],"stroke_width_px":4,"rotation_deg":0,"opacity":1,"z_index":2,"color_binding":"intent.mood.accent_color","fallback_color":"#FFD326","editable":true,"deletable":true,"appearance":{"default_visible":true,"condition":"always"},"figma_node_id":"400:3428"},
+      {"id":"s-curve-outline-subject-d-01","kind":"outline","type":"outline","purpose":"accent spaced circle for subject D","shape":"spaced_circle","subject_id":"subject_d","drawable":{"shape":"ellipse","fill":"transparent","stroke":{"width_px":4,"align":"center"}},"frame_px":[131,384,129,129],"stroke_width_px":4,"rotation_deg":0,"opacity":1,"z_index":3,"color_binding":"intent.mood.accent_color","fallback_color":"#FFD326","editable":true,"deletable":true,"appearance":{"default_visible":true,"condition":"always"},"figma_node_id":"400:3429"},
+      {"id":"s-curve-outline-subject-c-01","kind":"outline","type":"outline","purpose":"accent spaced circle for subject C","shape":"spaced_circle","subject_id":"subject_c","drawable":{"shape":"ellipse","fill":"transparent","stroke":{"width_px":4,"align":"center"}},"frame_px":[31,245,129,129],"stroke_width_px":4,"rotation_deg":0,"opacity":1,"z_index":4,"color_binding":"intent.mood.accent_color","fallback_color":"#FFD326","editable":true,"deletable":true,"appearance":{"default_visible":true,"condition":"always"},"figma_node_id":"400:3430"},
+      {"id":"s-curve-dash-01","kind":"sticker","type":"connector_path","purpose":"playful S dashed path under dishes","asset_ref":"connector-stickers/s-curve-dash-01.svg","frame_px":[17,28,210,450],"rotation_deg":0,"z_index":5,"opacity":1,"color_binding":"intent.mood.accent_color","fallback_color":"#FFD326","editable":true,"deletable":true,"appearance":{"default_visible":true,"condition":"always"},"figma_node_id":"400:3425"},
+      {"id":"food-spark-01","kind":"sticker","type":"illustration_sticker","purpose":"top-right food spark","asset_ref":"illustration-stickers/food-spark-01.svg","frame_px":[320,100,54,36],"rotation_deg":0,"z_index":11,"opacity":1,"color_binding":"intent.mood.accent_color","fallback_color":"#FFD326","color_binding_scope":"primary_accent_only","secondary_colors_fallback":["#F4A15D","#90BC79"],"editable":true,"deletable":true,"appearance":{"default_visible":true,"condition":"always"},"figma_node_id":"400:3436"}
+    ]
+  },
+  "outline":{"required":true,"independent":true,"shape":"spaced_circle","source":"fixed_decoration_layers.layers[kind=outline]","color_binding":"intent.mood.accent_color","fallback_color":"#FFD326"},
+  "assets":[
+    {"id":"s-curve-dash-01","type":"connector-sticker","taxonomy":["dashed","path","playful"],"file":"connector-stickers/s-curve-dash-01.svg","fixed_layer_ref":"fixed_decoration_layers.layers[id=s-curve-dash-01]"},
+    {"id":"food-spark-01","type":"illustration-sticker","taxonomy":["food","spark","cute"],"file":"illustration-stickers/food-spark-01.svg","fixed_layer_ref":"fixed_decoration_layers.layers[id=food-spark-01]"}
+  ],
+  "layer_stack": [
+    {"id":"background","kind":"background","z_index":0},
+    {"id":"s-curve-outline-subject-a-01","kind":"outline","z_index":1},
+    {"id":"s-curve-outline-subject-b-01","kind":"outline","z_index":2},
+    {"id":"s-curve-outline-subject-d-01","kind":"outline","z_index":3},
+    {"id":"s-curve-outline-subject-c-01","kind":"outline","z_index":4},
+    {"id":"s-curve-dash-01","kind":"sticker","z_index":5},
+    {"id":"subject_a","kind":"subject","z_index":6},
+    {"id":"subject_b","kind":"subject","z_index":7},
+    {"id":"subject_c","kind":"subject","z_index":8},
+    {"id":"subject_d","kind":"subject","z_index":9},
+    {"id":"headline-01","kind":"text","z_index":10},
+    {"id":"food-spark-01","kind":"sticker","z_index":11}
+  ],
+  "copy":{"fixed_short_title":["TASTY","DELICIOUS"],"zone":"upper_right"},
+  "composition_order":["background","outlines","subjects","s_curve_connector","short_title","illustration"],
+  "validation": {
+    "fixed_decoration_contract_required": true,
+    "reference_canvas_px_required": [402, 536],
+    "outline_count": 4,
+    "required_outline_fields": ["id","subject_id","frame_px","stroke_width_px","z_index","color_binding","fallback_color","editable","deletable"],
+    "required_sticker_fields": ["id","asset_ref","frame_px","rotation_deg","z_index","opacity","color_binding","fallback_color","editable","deletable"],
+    "required_layer_stack_ids": ["background","s-curve-outline-subject-a-01","s-curve-outline-subject-b-01","s-curve-outline-subject-d-01","s-curve-outline-subject-c-01","s-curve-dash-01","subject_a","subject_b","subject_c","subject_d","headline-01","food-spark-01"],
+    "required_layer_stack_order": "background < outlines < s-curve-dash-01 < subjects < headline-01 < food-spark-01"
+  }
+}

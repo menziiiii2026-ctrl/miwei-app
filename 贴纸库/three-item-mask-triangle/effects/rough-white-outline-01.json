@@ -1,0 +1,10 @@
+{
+  "id": "rough-white-outline-01",
+  "type": "code-effect",
+  "shape": "subject-hugging-or-circle",
+  "color": "#FFFDF5",
+  "stroke_width_ratio": [0.008, 0.014],
+  "gap_from_subject_ratio": [0.012, 0.025],
+  "texture": "hand_drawn_chalk",
+  "removable": true
+}

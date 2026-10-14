@@ -1,0 +1,24 @@
+{
+  "id": "caption-right-bottom-01",
+  "type": "text-component",
+  "copy_source": "user",
+  "max_characters": 11,
+  "single_line": true,
+  "anchor": { "x": 0.67, "y": 0.74 },
+  "anchor_mode": "left-center",
+  "font": {
+    "family_role": "neutral-sans-serif",
+    "weight": 500,
+    "size_to_canvas_height": 0.022,
+    "color": "#34393A"
+  },
+  "background": {
+    "mode": "none_or_translucent_light_gray",
+    "opacity_max": 0.38
+  },
+  "avoid": [
+    "main_food_feature",
+    "plate_rim_highlight",
+    "canvas_edge"
+  ]
+}

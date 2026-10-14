@@ -1,0 +1,27 @@
+{
+  "id": "diary-copy-family-01",
+  "type": "text-sticker-family",
+  "font_style": "chalk_handwritten",
+  "color": "#FFFDF5",
+  "items": [
+    {
+      "id": "short-left",
+      "anchor": [0.27, 0.28],
+      "copy_options": ["记录今日美味 ·", "好吃好吃 ·", "今日份惊喜 ·"]
+    },
+    {
+      "id": "short-right",
+      "anchor": [0.66, 0.33],
+      "copy_options": ["美味认证", "震撼美味", "今天也好吃"],
+      "underline": true
+    },
+    {
+      "id": "micro-note-left-bottom",
+      "anchor": [0.31, 0.64],
+      "line_count": [4, 6],
+      "copy_template": "好吃好吃好吃\\n{dish_name} 真美味\\n今日份惊喜\\n认真记录中\\n美味 美味",
+      "fallback_dish_name": "这一口",
+      "font_size_role": "micro"
+    }
+  ]
+}

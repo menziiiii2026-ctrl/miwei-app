@@ -1,0 +1,21 @@
+{
+  "id": "period-title-top-center-01",
+  "type": "text-component",
+  "copy_source": "app_period",
+  "content_by_period": {
+    "today": "Today",
+    "week": "This Week"
+  },
+  "anchor": {
+    "x": 0.5,
+    "y": 0.048
+  },
+  "anchor_mode": "center",
+  "font": {
+    "family_role": "neutral-sans-serif",
+    "weight": 700,
+    "size_to_canvas_height": 0.031,
+    "color": "#3A3A39"
+  },
+  "editable": true
+}

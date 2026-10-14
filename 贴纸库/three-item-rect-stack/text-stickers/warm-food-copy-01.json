@@ -1,0 +1,13 @@
+{
+  "id": "warm-food-copy-01",
+  "type": "text-sticker-family",
+  "role": "three-card-editorial-captions",
+  "editable": false,
+  "color": "#F5DD76",
+  "font_role": "warm-retro-serif-or-typewriter",
+  "slots": [
+    {"id": "top_left", "align": "left", "max_lines": 2, "vocabulary": ["DELICIOUS", "TASTY MOMENT", "FOOD NOTES"]},
+    {"id": "middle_right", "align": "left", "max_lines": 1, "vocabulary": ["YUMMY", "SWEET DAY", "SO TASTY"]},
+    {"id": "between_middle_bottom", "align": "center", "max_lines": 2, "vocabulary": ["TASTY TASTY", "FOOD DIARY", "GOOD MOOD"]}
+  ]
+}

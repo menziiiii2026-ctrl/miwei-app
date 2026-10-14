@@ -1,0 +1,4 @@
+// Shared build settings only. Local values stay in the ignored file below.
+SUPABASE_PROJECT_URL =
+SUPABASE_PUBLISHABLE_KEY =
+#include? "Supabase.local.xcconfig"

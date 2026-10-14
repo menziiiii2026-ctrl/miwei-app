@@ -1,0 +1,13 @@
+{
+  "id": "chalk-gapped-circle-outline-01",
+  "type": "gapped-chalk-circle-stroke",
+  "layer_order": "above_notebook_board_below_subject",
+  "default_color": "#FFFDF5",
+  "editable": ["color", "width", "gap", "texture"],
+  "width_to_canvas_width": 0.006,
+  "width_range": [0.004, 0.009],
+  "gap_to_canvas_width": 0.018,
+  "gap_range": [0.012, 0.026],
+  "roughness_to_stroke_width": 0.14,
+  "must_not_overlap_subject": true
+}

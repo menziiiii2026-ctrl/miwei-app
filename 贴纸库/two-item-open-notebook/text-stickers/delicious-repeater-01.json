@@ -1,0 +1,16 @@
+{
+  "id": "delicious-repeater-01",
+  "type": "text-sticker-family",
+  "content": ["delicious", "delicious", "delicious", "delicious", "delicious"],
+  "language": "en",
+  "role": "small-editorial-repeater",
+  "default_color": "#F8F1DE",
+  "layout": {
+    "anchor": "lower_left_canvas_left_edge",
+    "line_count": [14, 20],
+    "font_size_ratio": [0.018, 0.026],
+    "line_height": 1.1,
+    "max_width_ratio": 0.1
+  },
+  "editable": false
+}

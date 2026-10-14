@@ -1,0 +1,15 @@
+{
+  "id": "circular-outline-white-01",
+  "type": "gapped-circle-stroke",
+  "layer_order": "above_local_mask_below_subject",
+  "shape": "circle",
+  "default_color": "#FFFDF3",
+  "editable": ["color", "width", "gap"],
+  "width_to_canvas_width": 0.0125,
+  "width_range": [0.008, 0.016],
+  "fill": "none",
+  "placement": "concentric_outside_plate",
+  "gap_to_canvas_width": 0.027,
+  "gap_range": [0.02, 0.04],
+  "must_not_overlap_subject": true
+}

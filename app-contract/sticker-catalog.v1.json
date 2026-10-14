@@ -1,0 +1,21 @@
+{
+  "version": "sticker-catalog.v1",
+  "stickers": [
+    {"id":"bee-blue-yellow-01","asset_name":"sticker.bee-blue-yellow-01","source":"dark-outline-center/illustration-stickers/bee-blue-yellow-01.svg"},
+    {"id":"daisy-cream-01","asset_name":"sticker.daisy-cream-01","source":"dark-outline-center/illustration-stickers/daisy-cream-01.svg"},
+    {"id":"yellow-star-01","asset_name":"sticker.yellow-star-01","source":"four-item-bracket-grid/illustration-stickers/yellow-star-01.svg"},
+    {"id":"food-spark-01","asset_name":"sticker.food-spark-01","source":"four-item-s-curve/illustration-stickers/food-spark-01.svg"},
+    {"id":"heart-outline-white-01","asset_name":"sticker.heart-outline-white-01","source":"local-gray-board-lower-subject/illustration-stickers/heart-outline-white-01.svg"},
+    {"id":"wind-lines-white-01","asset_name":"sticker.wind-lines-white-01","source":"local-gray-board-lower-subject/illustration-stickers/wind-lines-white-01.svg"},
+    {"id":"glow-sparkle-01","asset_name":"sticker.glow-sparkle-01","source":"six-item-growing-polaroid-trail/illustration-stickers/glow-sparkle-01.svg"},
+    {"id":"translucent-circle-01","asset_name":"sticker.translucent-circle-01","source":"six-item-polaroid-ring/illustration-stickers/translucent-circle-01.svg"},
+    {"id":"chalk-drink-01","asset_name":"sticker.chalk-drink-01","source":"three-item-mask-triangle/illustration-stickers/chalk-drink-01.svg"},
+    {"id":"chalk-thumb-01","asset_name":"sticker.chalk-thumb-01","source":"three-item-mask-triangle/illustration-stickers/chalk-thumb-01.svg"},
+    {"id":"dotted-star-01","asset_name":"sticker.dotted-star-01","source":"three-item-timestamp-stack/illustration-stickers/dotted-star-01.svg"},
+    {"id":"arrow-group-white-01","asset_name":"sticker.arrow-group-white-01","source":"today-frame/illustration-stickers/arrow-group-white-01.svg"},
+    {"id":"chalk-star-01","asset_name":"sticker.chalk-star-01","source":"two-item-diary-collage/illustration-stickers/chalk-star-01.svg"},
+    {"id":"cute-spark-sticker-01","asset_name":"sticker.cute-spark-sticker-01","source":"two-item-diary-collage/illustration-stickers/cute-spark-sticker-01.svg"},
+    {"id":"green-clip-01","asset_name":"sticker.green-clip-01","source":"two-item-open-notebook/illustration-stickers/green-clip-01.svg"},
+    {"id":"horizontal-food-doodle-01","asset_name":"sticker.horizontal-food-doodle-01","source":"two-item-open-notebook/illustration-stickers/horizontal-food-doodle-01.svg"}
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "food-diary/canvas-scene.v1",
+  "title": "Food Diary Editable Canvas Scene",
+  "type": "object",
+  "required": ["version", "canvas", "template", "layers"],
+  "properties": {
+    "version": {"const": "canvas-scene.v1"},
+    "canvas": {
+      "type": "object",
+      "required": ["ratio", "width", "height"],
+      "properties": {
+        "ratio": {"const": "3:4"},
+        "width": {"type": "integer", "minimum": 1},
+        "height": {"type": "integer", "minimum": 1},
+        "safe_area": {"$ref": "#/$defs/rect"}
+      },
+      "additionalProperties": false
+    },
+    "template": {
+      "type": "object",
+      "required": ["id", "code", "revision"],
+      "properties": {
+        "id": {"type": "string"},
+        "code": {"type": "string", "pattern": "^[1-6]_模板[1-3]$"},
+        "revision": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "mood": {
+      "type": "object",
+      "properties": {
+        "tags": {"type": "array", "items": {"type": "string"}, "maxItems": 5},
+        "accent_color": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"}
+      },
+      "additionalProperties": false
+    },
+    "groups": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/group"}
+    },
+    "layers": {
+      "type": "array",
+      "minItems": 2,
+      "items": {"$ref": "#/$defs/layer"}
+    }
+  },
+  "$defs": {
+    "unit": {"type": "number", "minimum": 0, "maximum": 1},
+    "rect": {
+      "type": "object",
+      "required": ["x", "y", "width", "height"],
+      "properties": {
+        "x": {"$ref": "#/$defs/unit"}, "y": {"$ref": "#/$defs/unit"},
+        "width": {"$ref": "#/$defs/unit"}, "height": {"$ref": "#/$defs/unit"}
+      },
+      "additionalProperties": false
+    },
+    "editable": {
+      "type": "object",
+      "properties": {
+        "replace": {"type": "boolean"}, "move": {"type": "boolean"},
+        "resize": {"type": "boolean"}, "rotate": {"type": "boolean"},
+        "delete": {"type": "boolean"}, "edit_text": {"type": "boolean"},
+        "style": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    },
+    "contentTransform": {
+      "type": "object",
+      "description": "The transform of an asset inside its layer frame or clipping window. It must be persisted separately from the frame so an edited crop can be restored.",
+      "required": ["scale", "offset_x", "offset_y"],
+      "properties": {
+        "scale": {"type": "number", "exclusiveMinimum": 0, "maximum": 20},
+        "offset_x": {"type": "number", "minimum": -2, "maximum": 2},
+        "offset_y": {"type": "number", "minimum": -2, "maximum": 2}
+      },
+      "additionalProperties": false
+    },
+    "group": {
+      "type": "object",
+      "description": "A selectable container whose children move, resize, rotate and change z-order together, while each child remains addressable in drill-down editing.",
+      "required": ["id", "member_layer_ids", "editable"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "member_layer_ids": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": {"type": "string", "pattern": "^[a-z0-9-]+$"}
+        },
+        "editable": {"$ref": "#/$defs/editable"},
+        "locked_structure": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    },
+    "layer": {
+      "type": "object",
+      "required": ["id", "kind", "z_index", "frame", "editable"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "kind": {"enum": ["background", "mask", "board", "subject", "outline", "sticker", "text"]},
+        "z_index": {"type": "integer", "minimum": 0},
+        "frame": {"$ref": "#/$defs/rect"},
+        "rotation": {"type": "number", "minimum": -180, "maximum": 180},
+        "opacity": {"type": "number", "minimum": 0, "maximum": 1},
+        "asset_ref": {"type": "string"},
+        "content": {"type": "string"},
+        "crop": {"enum": ["none", "center-square", "center-middle-third", "template-window"]},
+        "clip_frame": {"$ref": "#/$defs/rect"},
+        "content_transform": {"$ref": "#/$defs/contentTransform"},
+        "group_id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "style": {"type": "object"},
+        "editable": {"$ref": "#/$defs/editable"},
+        "placement_reason": {"type": "string"}
+      },
+      "allOf": [
+        {"if": {"properties": {"kind": {"const": "text"}}}, "then": {"required": ["content"]}},
+        {"if": {"properties": {"kind": {"enum": ["background", "board", "subject", "sticker"]}}}, "then": {"required": ["asset_ref"]}}
+      ],
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

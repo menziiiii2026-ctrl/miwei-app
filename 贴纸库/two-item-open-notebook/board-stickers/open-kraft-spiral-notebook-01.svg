@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="960" viewBox="0 0 720 960">
+  <!-- Fixed board sticker: two warm kraft pages, joined by a central coil. -->
+  <rect x="88" y="92" width="544" height="382" rx="30" fill="#C9A170"/>
+  <rect x="88" y="488" width="544" height="382" rx="30" fill="#C9A170"/>
+  <g opacity="0.22" fill="#8F6A41">
+    <circle cx="150" cy="180" r="2"/><circle cx="203" cy="330" r="1.5"/><circle cx="255" cy="142" r="1.6"/>
+    <circle cx="356" cy="245" r="2"/><circle cx="460" cy="168" r="1.4"/><circle cx="559" cy="345" r="1.8"/>
+    <circle cx="170" cy="653" r="1.6"/><circle cx="274" cy="774" r="2"/><circle cx="387" cy="622" r="1.4"/>
+    <circle cx="501" cy="794" r="1.8"/><circle cx="583" cy="694" r="1.5"/>
+  </g>
+  <g fill="none" stroke="#29231E" stroke-width="8" stroke-linecap="round">
+    <path d="M118 450v58"/><path d="M150 450v58"/><path d="M182 450v58"/><path d="M214 450v58"/>
+    <path d="M246 450v58"/><path d="M278 450v58"/><path d="M310 450v58"/><path d="M342 450v58"/>
+    <path d="M374 450v58"/><path d="M406 450v58"/><path d="M438 450v58"/><path d="M470 450v58"/>
+    <path d="M502 450v58"/><path d="M534 450v58"/><path d="M566 450v58"/><path d="M598 450v58"/>
+  </g>
+  <g fill="#29231E">
+    <circle cx="118" cy="450" r="7"/><circle cx="150" cy="450" r="7"/><circle cx="182" cy="450" r="7"/><circle cx="214" cy="450" r="7"/>
+    <circle cx="246" cy="450" r="7"/><circle cx="278" cy="450" r="7"/><circle cx="310" cy="450" r="7"/><circle cx="342" cy="450" r="7"/>
+    <circle cx="374" cy="450" r="7"/><circle cx="406" cy="450" r="7"/><circle cx="438" cy="450" r="7"/><circle cx="470" cy="450" r="7"/>
+    <circle cx="502" cy="450" r="7"/><circle cx="534" cy="450" r="7"/><circle cx="566" cy="450" r="7"/><circle cx="598" cy="450" r="7"/>
+    <circle cx="118" cy="508" r="7"/><circle cx="150" cy="508" r="7"/><circle cx="182" cy="508" r="7"/><circle cx="214" cy="508" r="7"/>
+    <circle cx="246" cy="508" r="7"/><circle cx="278" cy="508" r="7"/><circle cx="310" cy="508" r="7"/><circle cx="342" cy="508" r="7"/>
+    <circle cx="374" cy="508" r="7"/><circle cx="406" cy="508" r="7"/><circle cx="438" cy="508" r="7"/><circle cx="470" cy="508" r="7"/>
+    <circle cx="502" cy="508" r="7"/><circle cx="534" cy="508" r="7"/><circle cx="566" cy="508" r="7"/><circle cx="598" cy="508" r="7"/>
+  </g>
+</svg>
