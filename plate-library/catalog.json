@@ -1,0 +1,412 @@
+{
+  "version": 1,
+  "libraryId": "vibe-food-plates",
+  "series": [
+    {
+      "id": "default",
+      "name": "常规系列",
+      "displayOrder": 1,
+      "isDefault": true,
+      "backgroundKey": "plates.default",
+      "imageDirectory": "images/default"
+    },
+    {
+      "id": "lindsay-rogers-series-1",
+      "name": "Lindsay Rogers / Series 1",
+      "displayOrder": 2,
+      "isDefault": false,
+      "backgroundKey": "plates.lindsay-rogers.series-1",
+      "imageDirectory": "images/lindsay-rogers-series-1"
+    },
+    {
+      "id": "lindsay-rogers-series-2",
+      "name": "Lindsay Rogers / Series 2",
+      "displayOrder": 3,
+      "isDefault": false,
+      "backgroundKey": "plates.lindsay-rogers.series-2",
+      "imageDirectory": "images/lindsay-rogers-series-2"
+    }
+  ],
+  "plates": [
+    {
+      "id": "plate-default-01",
+      "seriesId": "default",
+      "name": "深褐粗陶盘",
+      "sourceName": "01-深褐粗陶盘 1",
+      "displayOrder": 1,
+      "imagePath": "images/default/plate-default-01.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-default-02",
+      "seriesId": "default",
+      "name": "土黄粗陶盘",
+      "sourceName": "02-土黄粗陶盘 1",
+      "displayOrder": 2,
+      "imagePath": "images/default/plate-default-02.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-default-03",
+      "seriesId": "default",
+      "name": "蓝格餐盘",
+      "sourceName": "03-蓝格餐盘 1",
+      "displayOrder": 3,
+      "imagePath": "images/default/plate-default-03.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-default-04",
+      "seriesId": "default",
+      "name": "渐变浮雕餐盘",
+      "sourceName": "04-渐变浮雕餐盘 1",
+      "displayOrder": 4,
+      "imagePath": "images/default/plate-default-04.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-default-05",
+      "seriesId": "default",
+      "name": "黑心图案餐盘",
+      "sourceName": "05-黑心图案餐盘 1",
+      "displayOrder": 5,
+      "imagePath": "images/default/plate-default-05.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-default-06",
+      "seriesId": "default",
+      "name": "粉猫餐盘",
+      "sourceName": "06-粉猫餐盘 1",
+      "displayOrder": 6,
+      "imagePath": "images/default/plate-default-06.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-default-07",
+      "seriesId": "default",
+      "name": "粉涡纹餐盘",
+      "sourceName": "07-粉涡纹餐盘 1",
+      "displayOrder": 7,
+      "imagePath": "images/default/plate-default-07.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-default-08",
+      "seriesId": "default",
+      "name": "蓝花餐盘",
+      "sourceName": "08-蓝花餐盘 1",
+      "displayOrder": 8,
+      "imagePath": "images/default/plate-default-08.png",
+      "isAvailable": true,
+      "sourceImageSize": "2002x2002"
+    },
+    {
+      "id": "plate-default-09",
+      "seriesId": "default",
+      "name": "红心餐盘",
+      "sourceName": "10-红心餐盘 1",
+      "displayOrder": 9,
+      "imagePath": "images/default/plate-default-09.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-default-10",
+      "seriesId": "default",
+      "name": "猫咪餐盘",
+      "sourceName": "11-猫咪餐盘 1",
+      "displayOrder": 10,
+      "imagePath": "images/default/plate-default-10.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-default-11",
+      "seriesId": "default",
+      "name": "蓝绿植物餐盘",
+      "sourceName": "12-蓝绿植物餐盘 1",
+      "displayOrder": 11,
+      "imagePath": "images/default/plate-default-11.png",
+      "isAvailable": true,
+      "sourceImageSize": "2002x2002"
+    },
+    {
+      "id": "plate-default-12",
+      "seriesId": "default",
+      "name": "茶具餐盘",
+      "sourceName": "13-茶具餐盘 1",
+      "displayOrder": 12,
+      "imagePath": "images/default/plate-default-12.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-default-13",
+      "seriesId": "default",
+      "name": "彩带餐盘",
+      "sourceName": "14-彩带餐盘 1",
+      "displayOrder": 13,
+      "imagePath": "images/default/plate-default-13.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-default-14",
+      "seriesId": "default",
+      "name": "花鸟餐盘",
+      "sourceName": "15-花鸟餐盘 1",
+      "displayOrder": 14,
+      "imagePath": "images/default/plate-default-14.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-default-15",
+      "seriesId": "default",
+      "name": "紫黑粗陶盘",
+      "sourceName": "16-紫黑粗陶盘 1",
+      "displayOrder": 15,
+      "imagePath": "images/default/plate-default-15.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-default-16",
+      "seriesId": "default",
+      "name": "日纹粗陶盘",
+      "sourceName": "17-日纹粗陶盘 1",
+      "displayOrder": 16,
+      "imagePath": "images/default/plate-default-16.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-default-17",
+      "seriesId": "default",
+      "name": "人物粗陶盘",
+      "sourceName": "18-人物粗陶盘 1",
+      "displayOrder": 17,
+      "imagePath": "images/default/plate-default-17.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-default-18",
+      "seriesId": "default",
+      "name": "猫咪粗陶盘",
+      "sourceName": "19-猫咪粗陶盘 1",
+      "displayOrder": 18,
+      "imagePath": "images/default/plate-default-18.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-default-19",
+      "seriesId": "default",
+      "name": "红鸟陶瓷盘",
+      "sourceName": "20-红鸟陶瓷盘 1",
+      "displayOrder": 19,
+      "imagePath": "images/default/plate-default-19.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-default-20",
+      "seriesId": "default",
+      "name": "黑红白鹤陶瓷盘",
+      "sourceName": "21-黑红白鹤陶瓷盘 1",
+      "displayOrder": 20,
+      "imagePath": "images/default/plate-default-20.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-lindsay-rogers-series-1-01",
+      "seriesId": "lindsay-rogers-series-1",
+      "name": "a",
+      "sourceName": "01-IMG_8956 1",
+      "displayOrder": 1,
+      "imagePath": "images/lindsay-rogers-series-1/plate-lindsay-rogers-series-1-01.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-lindsay-rogers-series-1-02",
+      "seriesId": "lindsay-rogers-series-1",
+      "name": "b",
+      "sourceName": "02-IMG_8957 1",
+      "displayOrder": 2,
+      "imagePath": "images/lindsay-rogers-series-1/plate-lindsay-rogers-series-1-02.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-lindsay-rogers-series-1-03",
+      "seriesId": "lindsay-rogers-series-1",
+      "name": "c",
+      "sourceName": "03-IMG_8958 1",
+      "displayOrder": 3,
+      "imagePath": "images/lindsay-rogers-series-1/plate-lindsay-rogers-series-1-03.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-lindsay-rogers-series-1-04",
+      "seriesId": "lindsay-rogers-series-1",
+      "name": "d",
+      "sourceName": "04-IMG_8959 1",
+      "displayOrder": 4,
+      "imagePath": "images/lindsay-rogers-series-1/plate-lindsay-rogers-series-1-04.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-lindsay-rogers-series-1-05",
+      "seriesId": "lindsay-rogers-series-1",
+      "name": "e",
+      "sourceName": "05-IMG_8960 1",
+      "displayOrder": 5,
+      "imagePath": "images/lindsay-rogers-series-1/plate-lindsay-rogers-series-1-05.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-lindsay-rogers-series-1-06",
+      "seriesId": "lindsay-rogers-series-1",
+      "name": "f",
+      "sourceName": "06-IMG_8961 1",
+      "displayOrder": 6,
+      "imagePath": "images/lindsay-rogers-series-1/plate-lindsay-rogers-series-1-06.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-lindsay-rogers-series-1-07",
+      "seriesId": "lindsay-rogers-series-1",
+      "name": "g",
+      "sourceName": "07-IMG_8962 1",
+      "displayOrder": 7,
+      "imagePath": "images/lindsay-rogers-series-1/plate-lindsay-rogers-series-1-07.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-lindsay-rogers-series-1-08",
+      "seriesId": "lindsay-rogers-series-1",
+      "name": "h",
+      "sourceName": "08-IMG_8963 1",
+      "displayOrder": 8,
+      "imagePath": "images/lindsay-rogers-series-1/plate-lindsay-rogers-series-1-08.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-lindsay-rogers-series-1-09",
+      "seriesId": "lindsay-rogers-series-1",
+      "name": "i",
+      "sourceName": "09-IMG_8965 1",
+      "displayOrder": 9,
+      "imagePath": "images/lindsay-rogers-series-1/plate-lindsay-rogers-series-1-09.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-lindsay-rogers-series-2-01",
+      "seriesId": "lindsay-rogers-series-2",
+      "name": "a",
+      "sourceName": "01 1",
+      "displayOrder": 1,
+      "imagePath": "images/lindsay-rogers-series-2/plate-lindsay-rogers-series-2-01.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-lindsay-rogers-series-2-02",
+      "seriesId": "lindsay-rogers-series-2",
+      "name": "b",
+      "sourceName": "02 1",
+      "displayOrder": 2,
+      "imagePath": "images/lindsay-rogers-series-2/plate-lindsay-rogers-series-2-02.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-lindsay-rogers-series-2-03",
+      "seriesId": "lindsay-rogers-series-2",
+      "name": "c",
+      "sourceName": "03 1",
+      "displayOrder": 3,
+      "imagePath": "images/lindsay-rogers-series-2/plate-lindsay-rogers-series-2-03.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-lindsay-rogers-series-2-04",
+      "seriesId": "lindsay-rogers-series-2",
+      "name": "d",
+      "sourceName": "04 1",
+      "displayOrder": 4,
+      "imagePath": "images/lindsay-rogers-series-2/plate-lindsay-rogers-series-2-04.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-lindsay-rogers-series-2-05",
+      "seriesId": "lindsay-rogers-series-2",
+      "name": "e",
+      "sourceName": "05 1",
+      "displayOrder": 5,
+      "imagePath": "images/lindsay-rogers-series-2/plate-lindsay-rogers-series-2-05.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-lindsay-rogers-series-2-06",
+      "seriesId": "lindsay-rogers-series-2",
+      "name": "f",
+      "sourceName": "06 1",
+      "displayOrder": 6,
+      "imagePath": "images/lindsay-rogers-series-2/plate-lindsay-rogers-series-2-06.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-lindsay-rogers-series-2-07",
+      "seriesId": "lindsay-rogers-series-2",
+      "name": "g",
+      "sourceName": "07 1",
+      "displayOrder": 7,
+      "imagePath": "images/lindsay-rogers-series-2/plate-lindsay-rogers-series-2-07.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-lindsay-rogers-series-2-08",
+      "seriesId": "lindsay-rogers-series-2",
+      "name": "h",
+      "sourceName": "08 1",
+      "displayOrder": 8,
+      "imagePath": "images/lindsay-rogers-series-2/plate-lindsay-rogers-series-2-08.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    },
+    {
+      "id": "plate-lindsay-rogers-series-2-09",
+      "seriesId": "lindsay-rogers-series-2",
+      "name": "i",
+      "sourceName": "09 1",
+      "displayOrder": 9,
+      "imagePath": "images/lindsay-rogers-series-2/plate-lindsay-rogers-series-2-09.png",
+      "isAvailable": true,
+      "sourceImageSize": "2048x2048"
+    }
+  ]
+}
