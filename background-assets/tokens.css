@@ -1,0 +1,98 @@
+:root {
+  --color-canvas-warm: #f8f7f2;
+  --color-canvas-fog: #e6e6e6;
+  --color-linen-base: #f0f0f0;
+  --color-silk-highlight: #fbfcff;
+  --color-silk-shadow: #eaeaeb;
+  --color-dusty-mauve: #a88898;
+  --color-dusty-mauve-soft: #d1c3cb;
+  --color-caramel-linen: #bb9580;
+  --color-honey-cream: #efdba1;
+  --color-toast-brown: #b89078;
+  --color-seasonal-cta-red: #c90000;
+  --plate-shadow-contact: rgb(70 72 80 / 10%);
+  --plate-shadow-ambient: rgb(88 90 98 / 13%);
+  --plate-shadow-mauve: rgb(118 102 125 / 15%);
+}
+
+/*
+ * Plate shadow rule, based on reference image 5:
+ * light comes from 10–11 o'clock; shadow falls toward 4:30–5 o'clock.
+ * For a 300px plate, use x 6–9px, y 12–15px and blur 18–27px.
+ */
+.plate-with-shadow {
+  filter:
+    drop-shadow(2px 5px 7px var(--plate-shadow-contact))
+    drop-shadow(8px 14px 24px var(--plate-shadow-ambient));
+}
+
+/* Use a separate ellipse when the transparent image includes food and plate. */
+.plate-shadow-ellipse {
+  background: var(--plate-shadow-ambient);
+  border-radius: 50%;
+  filter: blur(20px);
+  height: 92%;
+  transform: translate(8px, 14px);
+  width: 92%;
+}
+
+.app-background-silk {
+  background-color: var(--color-canvas-warm);
+  background-image:
+    linear-gradient(rgb(248 247 242 / 22%), rgb(248 247 242 / 22%)),
+    url("./app-bg-pearl-silk-cotton.png");
+  background-position: center top;
+  background-size: cover;
+}
+
+.app-background-linen {
+  background-color: var(--color-linen-base);
+  background-image:
+    linear-gradient(rgb(248 247 242 / 16%), rgb(248 247 242 / 16%)),
+    url("./background-gallery.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.app-background-fine-ramie {
+  background: #f7f6f1 url("./background-plates-lindsay-rogers-series-2.png") center / cover;
+}
+
+.app-background-sheer-vertical {
+  background: #faf8f3 url("./background-plates-default.png") center / cover;
+}
+
+.app-background-flowing-ivory {
+  background: #f4f0e7 url("./app-bg-flowing-jacquard-ivory.png") center / cover;
+}
+
+.app-background-flowing-greige {
+  background: #e6e2da url("./background-plates-lindsay-rogers-series-1.png") center / cover;
+}
+
+.app-background-mineral-paper {
+  background: #f8f7f2 url("./app-bg-reference12-mineral-paper-low-saturation.png") center / cover;
+}
+
+.app-background-layered-silk {
+  background: #f8f7f2 url("./app-bg-reference13-layered-silk-low-saturation.png") center / cover;
+}
+
+.text-with-linen-texture {
+  color: var(--color-dusty-mauve);
+  background-image:
+    linear-gradient(rgb(168 136 152 / 55%), rgb(168 136 152 / 55%)),
+    url("./logo-texture-dusty-mauve-linen.png");
+  background-position: center;
+  background-size: 420px auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .text-with-linen-texture {
+    background-image: none;
+    -webkit-text-fill-color: currentColor;
+  }
+}

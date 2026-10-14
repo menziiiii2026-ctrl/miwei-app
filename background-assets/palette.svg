@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <rect width="1200" height="720" fill="#F8F7F2"/>
+  <text x="72" y="82" fill="#80626C" font-family="Arial, PingFang SC, sans-serif" font-size="34" font-weight="700">美食美盘 · 参考图色卡</text>
+  <text x="72" y="120" fill="#A88898" font-family="Arial, PingFang SC, sans-serif" font-size="18">奶油白基底 × 灰粉品牌色 × 烘焙暖色</text>
+  <g font-family="Arial, PingFang SC, sans-serif">
+    <g transform="translate(72 170)"><rect width="190" height="150" rx="18" fill="#F8F7F2" stroke="#DDD8D1"/><text x="18" y="190" font-size="18" fill="#80626C">温暖画布</text><text x="18" y="218" font-size="16" fill="#A88898">#F8F7F2</text></g>
+    <g transform="translate(286 170)"><rect width="190" height="150" rx="18" fill="#E6E6E6"/><text x="18" y="190" font-size="18" fill="#80626C">雾灰分区</text><text x="18" y="218" font-size="16" fill="#A88898">#E6E6E6</text></g>
+    <g transform="translate(500 170)"><rect width="190" height="150" rx="18" fill="#F0F0F0" stroke="#DDD8D1"/><text x="18" y="190" font-size="18" fill="#80626C">棉麻基底</text><text x="18" y="218" font-size="16" fill="#A88898">#F0F0F0</text></g>
+    <g transform="translate(714 170)"><rect width="190" height="150" rx="18" fill="#FBFCFF" stroke="#DDD8D1"/><text x="18" y="190" font-size="18" fill="#80626C">丝面高光</text><text x="18" y="218" font-size="16" fill="#A88898">#FBFCFF</text></g>
+    <g transform="translate(928 170)"><rect width="190" height="150" rx="18" fill="#EAEAEB"/><text x="18" y="190" font-size="18" fill="#80626C">丝面阴影</text><text x="18" y="218" font-size="16" fill="#A88898">#EAEAEB</text></g>
+    <g transform="translate(72 440)"><rect width="190" height="150" rx="18" fill="#A88898"/><text x="18" y="190" font-size="18" fill="#80626C">主品牌灰粉</text><text x="18" y="218" font-size="16" fill="#A88898">#A88898</text></g>
+    <g transform="translate(286 440)"><rect width="190" height="150" rx="18" fill="#D1C3CB"/><text x="18" y="190" font-size="18" fill="#80626C">浅灰粉</text><text x="18" y="218" font-size="16" fill="#A88898">#D1C3CB</text></g>
+    <g transform="translate(500 440)"><rect width="190" height="150" rx="18" fill="#BB9580"/><text x="18" y="190" font-size="18" fill="#80626C">焦糖棉麻</text><text x="18" y="218" font-size="16" fill="#A88898">#BB9580</text></g>
+    <g transform="translate(714 440)"><rect width="190" height="150" rx="18" fill="#EFDBA1"/><text x="18" y="190" font-size="18" fill="#80626C">蜂蜜奶油</text><text x="18" y="218" font-size="16" fill="#A88898">#EFDBA1</text></g>
+    <g transform="translate(928 440)"><rect width="190" height="150" rx="18" fill="#B89078"/><text x="18" y="190" font-size="18" fill="#80626C">烤面包棕</text><text x="18" y="218" font-size="16" fill="#A88898">#B89078</text></g>
+  </g>
+</svg>
